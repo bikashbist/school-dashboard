@@ -9,6 +9,23 @@ p {
   color: #333;
 }
 
+.alert-success {
+  color: #3c763d;
+  background-color: #a7f3d0;
+  border-color: #a7f3d0;
+  padding: 12px 30px;
+}
+
+.btn-primary {
+  background: #528bff;
+  border-color: #528bff !important;
+}
+
+.btn-online-class {
+  background: #f0f0f0;
+  box-shadow: inset 0px -1px 0px 0px rgba(0, 0, 0, 0.09);
+}
+
 #sidebar {
   min-width: 220px;
   max-width: 220px;
@@ -454,6 +471,74 @@ li.nav-item {
   font-weight: 400;
   line-height: 13px;
   letter-spacing: 0.6px;
+}
+
+.box-height {
+  min-height: 90vh !important;
+}
+
+.box-page {
+  padding: 15px;
+  border: 1px solid #eaedf0;
+}
+.box-page__header h1 {
+  font-size: 24px;
+  font-weight: 400;
+}
+.box-page__header--details a {
+  color: #222;
+}
+.box-page__header--details i {
+  color: #7e7e7e;
+}
+
+.viewZoomClass {
+  background: #f5f5f5;
+  /* border-left: 1px solid #ddd; */
+  height: 76vh;
+  padding: 18px 10px;
+  border-radius: 5px;
+}
+.viewZoomClass h1 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.table tr th {
+  font-size: 15px;
+  font-weight: 500;
+}
+.table tr td {
+  font-size: 15px;
+}
+
+.table-section .reportTable {
+  border: 1px solid #ccc;
+}
+.table-section .reportTable .thead-th {
+  font-size: 15px !important;
+  background: #eee;
+  border-bottom: 1px solid #ccc !important;
+  padding: 6px 3px !important;
+  font-weight: 500;
+}
+.table-section .table tr th {
+  font-size: 15px;
+  font-weight: 500;
+}
+.table-section .table tr td {
+  font-size: 15px;
+}
+
+.nav-tabs li.nav-item {
+  width: auto;
+  padding: 0;
+  margin: 0;
+}
+.nav-tabs .nav-link.active {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
 }
 
 @media (max-width: 768px) {
