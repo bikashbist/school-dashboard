@@ -641,43 +641,34 @@
                     <div class="box-page__header">
                         <div class="row">
                             <div class="col-lg-12">
+                                <div class="box-page__header--details d-flex justify-content-between mb-4">
+                                    <h1>Lunch Students</h1>
+
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="box-page__header">
+                        <div class="row">
+                            <div class="col-lg-12">
                                 <div class="box-page__header--details d-flex justify-content-between mb-2">
                                     <div class="students-list-buttons" style="margin-left:2px;margin-bottom:10px">
                                         <!--for push notification-->
-                                        <button class=" btn-sm mb-1 btn btn-success" id="smsNotification">SMS</button>
-                                        <button class=" btn-sm mb-1 btn btn-success" id="credentialsSms">Credentials SMS</button>
-
-                                        <button class=" btn-sm mb-1 btn btn-secondary" id="admitCardNotification">Notify Symbol
-                                            No.</button>
+                                        <button class=" btn-sm mb-1 btn btn-success" >SMS</button>
+                                        <button class=" btn-sm mb-1 btn btn-danger" >Upload File</button>
 
 
-                                        <button class=" btn-sm mb-1 btn btn-primary" id="studentsDocumentsUpload">Upload
-                                            Files</button>
+                                        <button class=" btn-sm mb-1 btn btn-primary" >Download</button>
 
 
-                                        <button class=" btn-sm mb-1 btn btn-primary" id="generateCertificate">Certificate</button>
+                                        <button class=" btn-sm mb-1 btn btn-primary" >Send Push Notification</button>
 
-                                        <button class=" btn-sm mb-1 btn btn-primary" id="generateCasResult">CAS</button>
+                                        <button class=" btn-sm mb-1 btn btn-primary" >Send Push Notification</button>
+                                        <button class=" btn-sm mb-1 btn btn-primary" >SMS</button>
 
-
-                                        <button class=" btn-sm mb-1 btn btn-primary" id="generateResult">Result</button>
-                                        <button class=" btn-sm mb-1 btn btn-success" id="student-id-card">ID Card</button>
-                                        <button class=" btn-sm mb-1 btn btn-secondary" id="upgradeStudents">Upgrade</button>
-
-                                        <button class=" btn-sm mb-1 btn btn-primary" id="addStudentsGroup">Add-Group</button>
-                                        <button class=" btn-sm mb-1 btn btn-success" id="addStudentsRecord">Records</button>
-                                        <button class=" btn-sm mb-1 btn btn-success" id="addStudentsRemarks">Remarks</button>
-                                        <button class=" btn-sm mb-1 btn btn-success" id="sendPushNotification">Notification</button>
-                                        <button class=" btn-sm mb-1 btn btn-primary" id="addStudentsMerit">Merit</button>
-                                        <button class=" btn-sm mb-1 btn btn-info" id="addLeaveNote">Leave Note</button>
-                                        <button class=" btn-sm mb-1 btn btn-info" id="addVisitorsRecord">Visitor's Rec.</button>
-
-                                        <button class=" btn-sm mb-1 btn btn-info" id="addToLeft">Left</button>
-                                        <button class=" btn-sm mb-1 btn btn-primary" id="student-admit-card">Admit Card</button>
-                                        <!--         <button class=" btn-sm mb-1 btn btn-success" id="parents-access-pin">Access Pin</button>
-                                         -->
-
-                                        <button class=" btn-sm mb-1 btn btn-info" id="siblings">Siblings</button>
                                     </div>
 
 
@@ -690,100 +681,43 @@
                     <div class="box-page__content">
                         <div class="row">
                             <section class="col-lg-12">
-                                <table class="table hidden-border">
+                                <table class="table table-borderless">
 
                                     <tbody>
                                         <tr>
                                             <td style="display: flex;">
                                                 <select class="form-control  " onchange="classChanged(this.value)"
                                                     id="mark" name="list_class" data-placeholder="Select Class">
-                                                    <option value="" selected=""> Select Class </option>
-                                                    <option value="All">All Class</option>
+                                                    <option value="" selected=""> Select Group </option>
+                                                    <option value="All">All Group</option>
                                                     <option value="BBA-Sem-8" data-batch=""> BBA-Sem-8 </option>
                                                     <option value="BBA-Sem-6" data-batch=""> BBA-Sem-6 </option>
                                                     <option value="BBA-Sem-4" data-batch=""> BBA-Sem-4 </option>
                                                     <option value="BBA-Sem-2" data-batch=""> BBA-Sem-2 </option>
                                                     <option value="BBA-Sem-3" data-batch=""> BBA-Sem-3 </option>
-                                                    <option value="BBA-Sem-5" data-batch=""> BBA-Sem-5 </option>
-                                                    <option value="BBA-Sem-7" data-batch=""> BBA-Sem-7 </option>
-                                                    <option value="BBA-Sem-1" data-batch=""> BBA-Sem-1 </option>
-                                                    <option value="BBA-2015-Batch" data-batch=""> BBA-2015-Batch
-                                                    </option>
-                                            
+                                                   
                                                 </select> </td>
                                             <td>
                                                 <select data-all="1" class="form-control "
                                                     onchange="sectionChanged(this.value)" id="section" name="section">
-                                                    <option value="" selected="">Select Section</option>
-                                                    <option value="All">All Section</option>
+                                                    <option value="" selected="">All Class</option>
+                                                    <option value="All">All Class</option>
                                                     <option value="A">A</option>
                                                 </select> </td>
                                             <td style="width: 200px;">
                                                 <select class="form-control" id="orderByStdList"
                                                     onchange="orderChanged(this.value);">
-                                                    <option value="s_name">Order By Name</option>
+                                                    <option value="s_name">All Section</option>
                                                     <option value="s_id">Order By Id</option>
                                                     <option value="s_roll">Order By Roll No.</option>
                                                     <option value="s_class">Order By Section</option>
                                                 </select>
                                             </td>
-                                            <td style="width: 150px;">
-                                                <select class="form-control" id=""
-                                                    onchange="filterChanged(this.value);">
-                                                    <option value="">Filter By</option>
-                                                    <option value="non-logged_in">Non-logged in</option>
-                                                    <option value="unchanged-password">Unchanged Password</option>
-                                                    <option value="image_empty">Image Not uploaded</option>
-                                                    <option value="image_added">Image uploaded</option>
-                                                    <option value="bus_students">Bus Students</option>
-                                                    <option value="non_bus_students">Non-Bus Students</option>
-                                                </select>
+                                            <td style="width: 200px;">
+                                                <button class="btn btn-primary" id="addNewGroupName">Create New Group</button>
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td colspan="4">
-                                                <input style="display: inline-block; width: auto; max-width: 250px;"
-                                                    oninput="changeHere()" type="text" id="searchListStudent"
-                                                    placeholder="Search students" class="form-control">
-                                                <select name="year" id="year" onchange="changeHere();"
-                                                    style="display:inline-block; width: auto; min-width: 140px; margin-right: 10px;"
-                                                    class="form-control">
-                                                    <option value="">Select Year </option>
-                                                    <option value="2081" selected="">2081</option>
-                                                    <option value="2080">2080</option>
-                                                    <option value="2079">2079</option>
-                                                    <option value="2078">2078</option>
-                                                    <option value="2077">2077</option>
-                                                    <option value="2076">2076</option>
-                                                    <option value="2075">2075</option>
-                                                    <option value="2074">2074</option>
-                                                    <option value="2073">2073</option>
-                                                </select>
-                                                <input type="checkbox" class="filter_checkbox" onchange="changeHere()"
-                                                    name="disabled" id="disabledStudentBox"> <label
-                                                    for="disabledStudentBox">Disabled</label> &nbsp; &nbsp;
-                                                <input type="checkbox" class="filter_checkbox" onchange="changeHere()"
-                                                    name="disabled_result" id="disabledResultBox"> <label
-                                                    for="disabledResultBox">Result Disabled</label> &nbsp; &nbsp;
-                                                <select class="form-control" id="" onchange="changeHere()"
-                                                    name="enrollment" style="width: 190px; display: inline-block">
-                                                    <option value="">Select Enrollment </option>
-                                                    <option value="0">Day Scholar</option>
-                                                    <option value="1">Day Boarder</option>
-                                                    <option value="2">Semi Day Boarder</option>
-                                                    <option value="3">Boarder</option>
-                                                </select>
-                                                <select class="form-control" id="" onchange="changeHere()"
-                                                    name="transportation_mode"
-                                                    style="width: 235px; display: inline-block">
-                                                    <option value="">Select Transportation Mode </option>
-                                                    <option value="1">Walking</option>
-                                                    <option value="2">Bus</option>
-                                                    <option value="3">Guardian</option>
-                                                </select>
-                                            </td>
-
-                                        </tr>
+                                       
                                     </tbody>
                                 </table>
                             </section>
