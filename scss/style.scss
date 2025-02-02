@@ -198,6 +198,36 @@ li.nav-item {
         border: 0px !important;
     }
 }
+.facility{
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 10px;
+        text-align: left;
+        border: 1px solid white;
+    }
+    th {
+        background-color: white;
+        color: black;
+    }
+    tbody tr {
+        background-color: #2D8BBC;
+        color: white;
+        cursor: move;
+    }
+    .actions {
+        display: flex;
+        gap: 10px;
+    }
+    .edit, .delete {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+    }
+}
 
 .progress-report {
     background: rgb(239, 247, 255);

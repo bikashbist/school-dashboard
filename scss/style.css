@@ -209,6 +209,35 @@ li.nav-item {
   border: 0px !important;
 }
 
+.facility table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.facility th, .facility td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid white;
+}
+.facility th {
+  background-color: white;
+  color: black;
+}
+.facility tbody tr {
+  background-color: #2D8BBC;
+  color: white;
+  cursor: move;
+}
+.facility .actions {
+  display: flex;
+  gap: 10px;
+}
+.facility .edit, .facility .delete {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
 .progress-report {
   background: rgb(239, 247, 255);
   border-radius: 4px;
