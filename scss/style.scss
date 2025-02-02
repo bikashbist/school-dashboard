@@ -1,30 +1,55 @@
+$primary-color: #f8fafb;
+$gray-dark-color: #333;
+$green-color: #3c763d;
+$green-light-color: #a7f3d0;
+$green-sharp-light-color: #a7f3d0;
+$blue-color: #528bff;
+$info-color: #28d5ff;
+$gray-dark-5-color: #555555;
+$border-color: #d3e3fd;
+$body-color: #edf2fa;
+
+@use 'login';
 body {
     overflow-x: hidden;
     font-family: 'Fira Sans', sans-serif !important;
-    color: #333;
+    color: $gray-dark-color;
 }
 
 p {
     font-size: 15px;
-    color: #333;
+    color: $gray-dark-color;
 }
-
+.form-control{
+    border: 1px  solid $border-color!important;
+}
+.form-select{
+    border: 1px  solid $border-color!important;
+}
+hr {
+   
+    border-top: 1px solid $border-color!important;
+    opacity: 1!important;
+}
+.border-bottom{
+    border-bottom: 1px solid $border-color!important;
+}
 .alert-success {
-    color: #3c763d;
-    background-color: #a7f3d0;
-    border-color: #a7f3d0;
+    color: $green-color;
+    background-color: $green-light-color;
+    border-color: $green-sharp-light-color;
     padding: 12px 30px;
 }
 
 .btn-primary {
-    background: #528bff;
-    border-color: #528bff !important;
+    background: $blue-color;
+    border-color: $blue-color !important;
 }
 
 .btn.btn-info,
 .btn.btn-info:hover {
-    background: #28d5ff;
-    border-color: #28d5ff !important;
+    background: $info-color;
+    border-color: $info-color !important;
 }
 
 input.form-control.search-lg {
@@ -54,8 +79,8 @@ input.form-control.search-lg {
 #sidebar {
     min-width: 220px;
     max-width: 220px;
-    background: #f8fafb;
-    color: #555555;
+    background: #ffffff;
+    color: $gray-dark-5-color;
     height: 100vh;
     overflow-y: scroll;
     transition: all 0.3s ease-in-out;
@@ -97,7 +122,7 @@ input.form-control.search-lg {
     position: sticky;
     top: 0;
     padding: 10px;
-    background-color: #f8fafb;
+    background-color: #fff;
     z-index: 9999;
     transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
@@ -106,7 +131,7 @@ input.form-control.search-lg {
     font-size: 15px;
     font-weight: 500;
     padding-top: 4px;
-    color: #333;
+    color: $gray-dark-color;
 }
 
 ul.nav {
@@ -124,7 +149,7 @@ li.nav-item {
 }
 
 #sidebar .nav-link {
-    color: #555555;
+    color: $gray-dark-5-color;
     font-size: 15px !important;
     position: relative;
     padding: 10px 10px;
@@ -135,10 +160,9 @@ li.nav-item {
 }
 
 #sidebar .nav-link.active {
-    background: #eaedf0 !important;
-    border-radius: 8px;
+    color: #222;
+   
 }
-
 
 #sidebar .nav-link:hover {
     color: #222;
@@ -149,6 +173,7 @@ li.nav-item {
     transition: all 0.3s ease-in-out;
     height: 100vh;
     overflow-y: scroll;
+    background-color: $body-color;
 }
 
 #main.full-width {
@@ -210,7 +235,8 @@ li.nav-item {
     flex-shrink: 0;
     border-radius: 4px;
     padding: 20px 16px;
-    border: 1px solid #e2e2e2;
+    border: 1px solid $border-color;
+    background-color: #fff;
 
     h1 {
         font-size: 14px;
@@ -245,7 +271,7 @@ li.nav-item {
     }
 
     .btn-default {
-        border: 1px solid #e2e2e2;
+        border: 1px solid $border-color;
         font-size: 15px;
         font-weight: 400;
     }
@@ -255,6 +281,7 @@ li.nav-item {
     display: flex;
     flex-direction: column;
     gap: 14px;
+    height: 100%;
 }
 
 .stats {
@@ -287,7 +314,7 @@ li.nav-item {
     .divider {
         width: 2px;
         height: 60px;
-        background: rgb(220, 220, 220);
+        background: rgb(211 227 253);
     }
 
     .divider:last-child {
@@ -314,10 +341,11 @@ li.nav-item {
     flex-shrink: 0;
     border-radius: 4px;
     padding: 20px 16px;
-    border: 1px solid #e2e2e2;
+    border: 1px solid $border-color;
+    background-color: #ffffff;
 
     .form-select {
-        border: 1px solid #e2e2e2;
+        border: 1px solid $border-color;
         font-size: 15px;
         font-weight: 400;
     }
@@ -330,10 +358,10 @@ li.nav-item {
 .aside-part {
 
     .btn-event {
-        border: 1px solid #e2e2e2;
+        border: 1px solid $border-color;
         font-size: 15px;
         font-weight: 400;
-        color: #333;
+        color: $gray-dark-color;
     }
 
     #calendar {
@@ -382,7 +410,7 @@ li.nav-item {
         flex-shrink: 0;
         border-radius: 4px;
         padding: 20px 16px;
-        border: 1px solid #e2e2e2;
+        border: 1px solid $border-color;
     }
 
     .flatpickr-calendar {
@@ -411,9 +439,10 @@ li.nav-item {
     flex-shrink: 0;
     border-radius: 4px;
     padding: 20px 16px;
-    border: 1px solid #e2e2e2;
+    border: 1px solid $border-color;
     position: relative;
     min-height: 370px;
+    background-color: #fff;
 
 
 
@@ -525,7 +554,8 @@ li.nav-item {
     flex-shrink: 0;
     border-radius: 4px;
     padding: 15px 12px;
-    border: 1px solid #e2e2e2;
+    border: 1px solid $border-color;
+    background: #ffffff;
 
     h1 {
         font-size: 14px;
@@ -536,10 +566,9 @@ li.nav-item {
 
     .card-wrapper {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin-top: 11px;
-        border-radius: 4px;
-        background-color: var(--Alias-token-background-neutral-subtlest);
+        grid-template-columns: 1fr 1fr 1fr  1fr 1fr 1fr;
+        gap: 10px !important;
+        border-radius: 0px;
     }
 
     .card-wrapper-gap-6 {
@@ -551,16 +580,15 @@ li.nav-item {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 5px;
         text-decoration: none;
-
+        padding: 10px 0px 0px 0px;
         transition: transform 0.2s ease-in-out;
-        border: 0px;
+        border: 1px solid $border-color;
     }
 
     .card .icon {
         border-radius: 2px;
-        border: 1px solid #e2e2e2;
+        border: 1px solid $border-color;
         width: 32px;
         height: 32px;
         padding: 4px;
@@ -606,12 +634,13 @@ li.nav-item {
   }
 .box-page {
     padding: 15px;
-    border: 1px solid #eaedf0;
+    border: 1px solid $border-color;
+    background-color: #ffffff;
 
     &__header {
         h1 {
-            font-size: 24px;
-            font-weight: 400;
+            font-size: 18px;
+            font-weight: 500;
         }
 
         &--details {
