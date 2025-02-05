@@ -194,7 +194,7 @@
                         <li><a class="nav-link" href="#">Certificate Builder</a></li>
                     </ul>
                 </li>
-           
+
                 <li class="nav-item">
                     <a class="nav-link" href="#"><img src="images/icons/Teacher evaluation icon.svg"
                             alt="e-learning">Students' Evaluation</a>
@@ -667,90 +667,82 @@
                                         aria-labelledby="student-list-tab" tabindex="0">
 
                                         <div class="main-content">
-                                            <span style="float: right;"> <input type="checkbox" id="groupwise"> <label
-                                                    for="groupwise" style="font-size: 16px;">Group Wise
-                                                    Class</label></span>
-                                            <table class="table table-borderless">
-                                                <tbody>
-                                                    <tr>
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <span style="float: right;">
+                                                        <input type="checkbox" id="groupwise">
+                                                        <label for="groupwise" style="font-size: 16px;">Group Wise
+                                                            Class</label>
+                                                    </span>
+                                                </div>
+                                            </div>
 
-                                                        <td>
-                                                            <select class="form-select">
-                                                                <option value="">Select Group</option>
-                                                                <option value="14104">Fifth Semester Basics of
-                                                                    Managerial Accounting</option>
-                                                                <option value="14103">Fifth Semester Fundamentals of
-                                                                    Operation Management</option>
+                                            <div class="row g-2">
+                                                <div class="col-lg-3">
+                                                    <select class="form-select">
+                                                        <option value="">Select Group</option>
+                                                        <option value="14104">Fifth Semester Basics of
+                                                            Managerial Accounting</option>
+                                                        <option value="14103">Fifth Semester Fundamentals of
+                                                            Operation Management</option>
 
-                                                            </select>
-                                                        </td>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <select class="form-select ">
+                                                        <option value="" selected=""> Select Class </option>
+                                                        <option value="All">All Class</option>
+                                                        <option value="BBA-Sem-8" data-batch=""> BBA-Sem-8
+                                                        </option>
 
-                                                        <td>
-                                                            <select class="form-select ">
-                                                                <option value="" selected=""> Select Class </option>
-                                                                <option value="All">All Class</option>
-                                                                <option value="BBA-Sem-8" data-batch=""> BBA-Sem-8
-                                                                </option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <select class="form-select">
 
-                                                            </select>
+                                                        <option value="print1" selected="">Print Format 1
+                                                        </option>
+                                                        <option value="print2">Print Format 2</option>
 
-                                                        </td>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <select class="form-select">
+                                                        <option value="s_name">Order By Name</option>
+                                                        <option value="s_id">Order By Id</option>
+                                                        <option value="s_roll">Order By Roll No.</option>
+                                                        <option value="s_symbol">Order By Symbol No.</option>
+                                                        <option value="see_registration">SEE Registration Number
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <select class="form-select">
+                                                        <option value="">Select Year </option>
+                                                        <option value="2081" selected="">2081</option>
+                                                        <option value="2080">2080</option>
 
-                                                        <td>
-                                                            <select class="form-select">
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-2 text-center">
+                                                    <input type="checkbox"> <label
+                                                        for="disabledStudentBox">Disabled</label>
+                                                </div>
+                                                <div class="col-lg-2">
+                                                    <input type="checkbox"> <label for="disabledResultBox">Result
+                                                        Disabled</label>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <select class="form-select" name="enrollment">
+                                                        <option value="">Select Enrollment </option>
+                                                        <option value="0">Day Scholar</option>
+                                                        <option value="1">Day Boarder</option>
+                                                        <option value="2">Semi Day Boarder</option>
+                                                        <option value="3">Boarder</option>
+                                                    </select>
+                                                </div>
+                                            </div>
 
-                                                                <option value="print1" selected="">Print Format 1
-                                                                </option>
-                                                                <option value="print2">Print Format 2</option>
-
-                                                            </select>
-                                                        </td>
-
-                                                        <td>
-                                                            <select class="form-select">
-                                                                <option value="s_name">Order By Name</option>
-                                                                <option value="s_id">Order By Id</option>
-                                                                <option value="s_roll">Order By Roll No.</option>
-                                                                <option value="s_symbol">Order By Symbol No.</option>
-                                                                <option value="see_registration">SEE Registration Number
-                                                                </option>
-                                                            </select>
-                                                        </td>
-                                                        <td>
-                                                            <select class="form-select">
-                                                                <option value="">Select Year </option>
-                                                                <option value="2081" selected="">2081</option>
-                                                                <option value="2080">2080</option>
-
-                                                            </select>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="width: 200px;">
-                                                            <input type="checkbox"> <label
-                                                                for="disabledStudentBox">Disabled</label>
-                                                        </td>
-                                                        <td>
-                                                            <input type="checkbox"> <label
-                                                                for="disabledResultBox">Result Disabled</label>
-                                                        </td>
-
-                                                        <td>
-
-                                                            <select class="form-select" name="enrollment">
-                                                                <option value="">Select Enrollment </option>
-                                                                <option value="0">Day Scholar</option>
-                                                                <option value="1">Day Boarder</option>
-                                                                <option value="2">Semi Day Boarder</option>
-                                                                <option value="3">Boarder</option>
-                                                            </select>
-
-
-                                                        </td>
-
-                                                    </tr>
-                                                </tbody>
-                                            </table>
                                             <div style="text-align:right;margin:10px">
 
                                                 <button class="btn btn-primary " id="printData">Print</button>

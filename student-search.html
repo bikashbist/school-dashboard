@@ -673,9 +673,7 @@
                                 <div id="custom-search-input">
                                     <div class="input-group my-4">
                                         <input type="text" class="form-control search-lg" id="search-input"
-                                            placeholder="Enter Student Name or Unique-Id or Phone Number"
-                                            aria-label="Enter Student Name or Unique-Id or Phone Number"
-                                            aria-describedby="search-btn">
+                                            >
                                         <span
                                             class="input-group-text text-white btn btn-info d-flex align-items-center justify-content-center"
                                             id="search-btn">
@@ -689,421 +687,70 @@
                         </div>
                     </div>
                     <div class="box-page__content">
-                        <div class="row">
-                            <section class="col-lg-12">
+                        <div class="table-responsive">
 
-                            </section>
-                            <section class="col-md-12">
-                                <div id="results-table" style="display: none;">
-                                <table class="table" >
-                                    <thead>
-                                        <tr>
-                                            <th><input id="select_all" value="1" type="checkbox"> <br><span
-                                                    style="font-size:12px">All</span> </th>
-                                            <th>Image</th>
-                                            <th>Name</th>
-                                            <th>Username</th>
-                                            <th>Father Phone</th>
-                                            <th>Mother Phone</th>
+                            <table class="table mt-lg-4">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <input id="select_all" value="1" type="checkbox">
+                                            <br>
+                                            <span>All</span>
+                                        </th>
+                                        <th>Image</th>
+                                        <th>Name</th>
+                                        <th>Username</th>
+                                        <th>Father Phone</th>
+                                        <th>Mother Phone</th>
 
-                                            <th>Student Previous Code</th>
-                                            <th>Password</th>
-                                            <th style="min-width: 20%">Action</th>
+                                        <th>Student Previous Code</th>
+                                        <th>Password</th>
+                                        <th>Action</th>
 
-                                        </tr>
-                                    </thead>
-                                    <thead>
-                                    </thead>
-                                    <tbody>
-                                        <tr id="users-994569" father-name=" Dandpani Koirala"
-                                            mother-name="Durga Koirala" father-phone="9840888948"
-                                            mother-phone="9841678857" user-class="BHM-Sem-5" user-section="A"
-                                            data-username="Central-BHM-2079-011" data-dummy-password="tfstx">
-                                            <td>
-                                                <input class="usercheck" name="usercheck[]" type="checkbox"
-                                                    value="994569">
-                                            </td>
-                                            <td>
-                                                <div
-                                                    style="position: relative; width: 80px; background: #eee; overflow: hidden; width: 70px; height: 70px; border-radius: 50%;">
-                                                    <img id="img-941742" onerror="this.style.display='none'"
-                                                        src="https://images.unsplash.com/photo-1622861431942-b45f2b5b6564?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                                        width="60" style="width: 100%; height: auto;" alt="TK">
+                                    </tr>
+                                </thead>
 
-                                                    <img src="" alt="">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input class="usercheck" name="usercheck[]" type="checkbox">
+                                        </td>
+                                        <td>
+                                            <div>
+                                                <img class="rounded-circle "
+                                                    src="https://images.unsplash.com/photo-1622861431942-b45f2b5b6564?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                                    width="60" height="60" alt="TK">
+                                            </div>
 
-                                                    <img src="" alt="">
-                                                    <label for="file-0" id="parent-941741"
-                                                        style="width: 100%; height: 100%;position: absolute; bottom: 0px; right: 0px; z-index: 99; cursor: pointer">
-                                                        <i class="fa fa-camera upload-button"
-                                                            style="position: absolute; bottom: 5px; right: 7px; z-index: 99; padding: 5px;"></i>
-                                                        <input type="file" id="file-0" data-id="941741"
-                                                            class="photo-upload" style="display: none"
-                                                            data-parent="#parent-941741" data-feature="student"
-                                                            data-args="image" name="image" data-resize="600"
-                                                            accept="image/gif,image/jpeg,image/jpg,image/png"
-                                                            data-original-title="upload photos">
-                                                    </label>
-                                                    <!--                                                    <a class="" href="javascript:void();"  style="position: absolute; bottom: 1px; right: 2px; z-index: 99;">-->
-                                                    <!--                                                        <i class="fa fa-camera upload-button" style="color: #949494; padding: 6px;"></i>-->
-                                                    <!--                                                    </a>-->
-                                                </div>
+                                        </td>
+                                        <td>
+                                            Kalpana Koirala | BHM-Sem-5,A
 
-                                            </td>
-                                            <td>
-                                                Kalpana Koirala | BHM-Sem-5,A
+                                            <br>
+                                        </td>
+                                        <td>Central-BHM-2079-011</td>
+                                        <td>9840888948</td>
+                                        <td>9841678857</td>
 
-                                                <br>
-                                            </td>
-                                            <td>Central-BHM-2079-011</td>
-                                            <td>9840888948</td>
-                                            <td>9841678857</td>
+                                        <td></td>
+                                        <td>
+                                            <div>
+                                                tfstx </div>
+                                            <a href="#" class="text-primary">Reset</a>
+                                        </td>
+                                        <td>
 
-                                            <td></td>
-                                            <td>
-                                                <div id="password-994569">
-                                                    tfstx </div>
-                                                <a title="Reset Password" href="javascript:void();"
-                                                    onclick="resetUsersPassword('994569')"
-                                                    style="float:left;margin-right:5px">Reset</a>
-                                            </td>
-                                            <td class="btn-collection-sm f-lex flex-wrap gap-10">
+                                            <a class="btn btn-primary btn-sm mb-1 ">Enabled</a>
 
-                                                <a class="btn btn-primary btn-sm mb-1" id="user-994569">Enabled</a>
+                                            <a class="btn btn-info btn-sm mb-1 ">Result
+                                                Enabled</a>
+                                            <a class="btn btn-success btn-sm mb-1 ">Edit</a>
+                                            <a class="btn btn-primary btn-sm mb-1 ">Detail</a>
+                                        </td>
+                                    </tr>
 
-                                                <a class="btn btn-info btn-sm mb-1" id="user-result-994569">Result
-                                                    Enabled</a>
-                                                <a class="btn btn-success btn-sm mb-1"
-                                                    style="float:left;margin-right:5px">Edit</a>
-                                                <a class="btn btn-primary btn-sm mb-1"
-                                                    style="float:left;margin-right:5px">Detail</a>
-                                            </td>
-                                        </tr>
-                                        <tr class="tr-detailed" style="display: none;">
-                                            <td colspan="1" style="padding: 0; border: none !important;"></td>
-                                            <td colspan="6" style="padding: 0; border: none;">
-                                                <table class="table table-bordered detailed-inside-td"
-                                                    style="font-size: 14px; margin-bottom: 10px; border-color: #f2f2f2;">
-                                                    <thead>
-                                                        <tr>
-                                                            <td> Gender</td>
-                                                            <td> Father's Name </td>
-                                                            <td> Father's Phone </td>
-                                                            <td> Mother's Name </td>
-                                                            <td> Mother's Phone </td>
-                                                            <td>Phone</td>
-                                                            <td>Address</td>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td> Female </td>
-                                                            <td> Dandpani Koirala </td>
-                                                            <td> 9840888948 </td>
-                                                            <td> Durga Koirala </td>
-                                                            <td> 9841678857 </td>
-                                                            <td>9840888949</td>
-                                                            <td>Budhanilkantha</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </td>
-                                        </tr>
-
-                                        <tr id="users-994569" father-name=" Dandpani Koirala"
-                                            mother-name="Durga Koirala" father-phone="9840888948"
-                                            mother-phone="9841678857" user-class="BHM-Sem-5" user-section="A"
-                                            data-username="Central-BHM-2079-011" data-dummy-password="tfstx">
-                                            <td>
-                                                <input class="usercheck" name="usercheck[]" type="checkbox"
-                                                    value="994569">
-                                            </td>
-                                            <td>
-                                                <div
-                                                    style="position: relative; width: 80px; background: #eee; overflow: hidden; width: 70px; height: 70px; border-radius: 50%;">
-                                                    <img id="img-941742" onerror="this.style.display='none'"
-                                                        src="https://images.unsplash.com/photo-1622861431942-b45f2b5b6564?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                                        width="60" style="width: 100%; height: auto;" alt="TK">
-
-                                                    <img src="" alt="">
-
-                                                    <img src="" alt="">
-                                                    <label for="file-0" id="parent-941741"
-                                                        style="width: 100%; height: 100%;position: absolute; bottom: 0px; right: 0px; z-index: 99; cursor: pointer">
-                                                        <i class="fa fa-camera upload-button"
-                                                            style="position: absolute; bottom: 5px; right: 7px; z-index: 99; padding: 5px;"></i>
-                                                        <input type="file" id="file-0" data-id="941741"
-                                                            class="photo-upload" style="display: none"
-                                                            data-parent="#parent-941741" data-feature="student"
-                                                            data-args="image" name="image" data-resize="600"
-                                                            accept="image/gif,image/jpeg,image/jpg,image/png"
-                                                            data-original-title="upload photos">
-                                                    </label>
-                                                    <!--                                                    <a class="" href="javascript:void();"  style="position: absolute; bottom: 1px; right: 2px; z-index: 99;">-->
-                                                    <!--                                                        <i class="fa fa-camera upload-button" style="color: #949494; padding: 6px;"></i>-->
-                                                    <!--                                                    </a>-->
-                                                </div>
-
-                                            </td>
-                                            <td>
-                                                Kalpana Koirala | BHM-Sem-5,A
-
-                                                <br>
-                                            </td>
-                                            <td>Central-BHM-2079-011</td>
-                                            <td>9840888948</td>
-                                            <td>9841678857</td>
-
-                                            <td></td>
-                                            <td>
-                                                <div id="password-994569">
-                                                    tfstx </div>
-                                                <a title="Reset Password" href="javascript:void();"
-                                                    onclick="resetUsersPassword('994569')"
-                                                    style="float:left;margin-right:5px">Reset</a>
-                                            </td>
-                                            <td class="btn-collection-sm f-lex flex-wrap gap-10">
-
-                                                <a class="btn btn-primary btn-sm mb-1" id="user-994569">Enabled</a>
-
-                                                <a class="btn btn-info btn-sm mb-1" id="user-result-994569">Result
-                                                    Enabled</a>
-                                                <a class="btn btn-success btn-sm mb-1"
-                                                    style="float:left;margin-right:5px">Edit</a>
-                                                <a class="btn btn-primary btn-sm mb-1"
-                                                    style="float:left;margin-right:5px">Detail</a>
-                                            </td>
-                                        </tr>
-                                        <tr id="users-994569" father-name=" Dandpani Koirala"
-                                            mother-name="Durga Koirala" father-phone="9840888948"
-                                            mother-phone="9841678857" user-class="BHM-Sem-5" user-section="A"
-                                            data-username="Central-BHM-2079-011" data-dummy-password="tfstx">
-                                            <td>
-                                                <input class="usercheck" name="usercheck[]" type="checkbox"
-                                                    value="994569">
-                                            </td>
-                                            <td>
-                                                <div
-                                                    style="position: relative; width: 80px; background: #eee; overflow: hidden; width: 70px; height: 70px; border-radius: 50%;">
-                                                    <img id="img-941742" onerror="this.style.display='none'"
-                                                        src="https://images.unsplash.com/photo-1622861431942-b45f2b5b6564?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                                        width="60" style="width: 100%; height: auto;" alt="TK">
-
-                                                    <img src="" alt="">
-
-                                                    <img src="" alt="">
-                                                    <label for="file-0" id="parent-941741"
-                                                        style="width: 100%; height: 100%;position: absolute; bottom: 0px; right: 0px; z-index: 99; cursor: pointer">
-                                                        <i class="fa fa-camera upload-button"
-                                                            style="position: absolute; bottom: 5px; right: 7px; z-index: 99; padding: 5px;"></i>
-                                                        <input type="file" id="file-0" data-id="941741"
-                                                            class="photo-upload" style="display: none"
-                                                            data-parent="#parent-941741" data-feature="student"
-                                                            data-args="image" name="image" data-resize="600"
-                                                            accept="image/gif,image/jpeg,image/jpg,image/png"
-                                                            data-original-title="upload photos">
-                                                    </label>
-                                                    <!--                                                    <a class="" href="javascript:void();"  style="position: absolute; bottom: 1px; right: 2px; z-index: 99;">-->
-                                                    <!--                                                        <i class="fa fa-camera upload-button" style="color: #949494; padding: 6px;"></i>-->
-                                                    <!--                                                    </a>-->
-                                                </div>
-
-                                            </td>
-                                            <td>
-                                                Kalpana Koirala | BHM-Sem-5,A
-
-                                                <br>
-                                            </td>
-                                            <td>Central-BHM-2079-011</td>
-                                            <td>9840888948</td>
-                                            <td>9841678857</td>
-
-                                            <td></td>
-                                            <td>
-                                                <div id="password-994569">
-                                                    tfstx </div>
-                                                <a title="Reset Password" href="javascript:void();"
-                                                    onclick="resetUsersPassword('994569')"
-                                                    style="float:left;margin-right:5px">Reset</a>
-                                            </td>
-                                            <td class="btn-collection-sm f-lex flex-wrap gap-10">
-
-                                                <a class="btn btn-primary btn-sm mb-1" id="user-994569">Enabled</a>
-
-                                                <a class="btn btn-info btn-sm mb-1" id="user-result-994569">Result
-                                                    Enabled</a>
-                                                <a class="btn btn-success btn-sm mb-1"
-                                                    style="float:left;margin-right:5px">Edit</a>
-                                                <a class="btn btn-primary btn-sm mb-1"
-                                                    style="float:left;margin-right:5px">Detail</a>
-                                            </td>
-                                        </tr>
-                                        <tr id="users-994569" father-name=" Dandpani Koirala"
-                                            mother-name="Durga Koirala" father-phone="9840888948"
-                                            mother-phone="9841678857" user-class="BHM-Sem-5" user-section="A"
-                                            data-username="Central-BHM-2079-011" data-dummy-password="tfstx">
-                                            <td>
-                                                <input class="usercheck" name="usercheck[]" type="checkbox"
-                                                    value="994569">
-                                            </td>
-                                            <td>
-                                                <div
-                                                    style="position: relative; width: 80px; background: #eee; overflow: hidden; width: 70px; height: 70px; border-radius: 50%;">
-                                                    <img id="img-941742" onerror="this.style.display='none'"
-                                                        src="https://images.unsplash.com/photo-1622861431942-b45f2b5b6564?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                                        width="60" style="width: 100%; height: auto;" alt="TK">
-
-                                                    <img src="" alt="">
-
-                                                    <img src="" alt="">
-                                                    <label for="file-0" id="parent-941741"
-                                                        style="width: 100%; height: 100%;position: absolute; bottom: 0px; right: 0px; z-index: 99; cursor: pointer">
-                                                        <i class="fa fa-camera upload-button"
-                                                            style="position: absolute; bottom: 5px; right: 7px; z-index: 99; padding: 5px;"></i>
-                                                        <input type="file" id="file-0" data-id="941741"
-                                                            class="photo-upload" style="display: none"
-                                                            data-parent="#parent-941741" data-feature="student"
-                                                            data-args="image" name="image" data-resize="600"
-                                                            accept="image/gif,image/jpeg,image/jpg,image/png"
-                                                            data-original-title="upload photos">
-                                                    </label>
-                                                    <!--                                                    <a class="" href="javascript:void();"  style="position: absolute; bottom: 1px; right: 2px; z-index: 99;">-->
-                                                    <!--                                                        <i class="fa fa-camera upload-button" style="color: #949494; padding: 6px;"></i>-->
-                                                    <!--                                                    </a>-->
-                                                </div>
-
-                                            </td>
-                                            <td>
-                                                Kalpana Koirala | BHM-Sem-5,A
-
-                                                <br>
-                                            </td>
-                                            <td>Central-BHM-2079-011</td>
-                                            <td>9840888948</td>
-                                            <td>9841678857</td>
-
-                                            <td></td>
-                                            <td>
-                                                <div id="password-994569">
-                                                    tfstx </div>
-                                                <a title="Reset Password" href="javascript:void();"
-                                                    onclick="resetUsersPassword('994569')"
-                                                    style="float:left;margin-right:5px">Reset</a>
-                                            </td>
-                                            <td class="btn-collection-sm f-lex flex-wrap gap-10">
-
-                                                <a class="btn btn-primary btn-sm mb-1" id="user-994569">Enabled</a>
-
-                                                <a class="btn btn-info btn-sm mb-1" id="user-result-994569">Result
-                                                    Enabled</a>
-                                                <a class="btn btn-success btn-sm mb-1"
-                                                    style="float:left;margin-right:5px">Edit</a>
-                                                <a class="btn btn-primary btn-sm mb-1"
-                                                    style="float:left;margin-right:5px">Detail</a>
-                                            </td>
-                                        </tr>
-                                        <tr id="users-1105394" father-name="" mother-name="" father-phone=""
-                                            mother-phone="" user-class="BHCM-SEM-5" user-section="A"
-                                            data-username="Central-BHCM-2079-019" data-dummy-password="e6fh8">
-                                            <td>
-                                                <input class="usercheck" name="usercheck[]" type="checkbox"
-                                                    value="1105394">
-                                            </td>
-                                            <td>
-                                                <div
-                                                    style="position: relative; width: 80px; background: #eee; overflow: hidden; width: 70px; height: 70px; border-radius: 50%;">
-                                                    <img id="img-1046300" onerror="this.style.display='none'"
-                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAYAAABxLuKEAAAAAXNSR0IArs4c6QAAA/lJREFUeF7tmntoTmEcx7/nPMeGzSiaa6aQ26YsIRsJG4pEEf+5/CXyhzu5jdyLlPiPf5VQiGI2YdhyX9jmkmxro73LdW7nPI9+53h739fed3uf7dio3/PXWs95Lp/z+X2f57QZj2ulArdGBAwGE90KBhOjWhgMg9ELUjaGjWFj9AiwMXq8OGPYGDZGjwAbo8eLM4aNYWP0CLAxerw4Y9gYNkaPABujx4szho1hY/QIsDF6vDhj2Jg2NqYioLA530ZHy8CeHIG+KUajFVR/VNh4xXF/H96H/jic/1LizFOJqo8KtgQ6dQBG9zGxJNNE7y6hsfIKHdyulFF3F+sZPRSRvX0ppUvPJY7ccTC+v4l12QIdRGiSnw6w/6a3qU0ThduH2vtvQF6hjfI6hUHdDUwaYKKjBTyoUSipku4YWydZGNnLg0NgSt9KLMgQ6JIYOT6NTc/1SjZwYJpA986NX44uJF/ABDdf9EZi2RiBWUO8zVM7Xy5xrMTBvHQTi0YJ0JKp/54bjgtg+ViB6YNN9/fBRhYStEQR2iiBqQhIHJphITUpcuP0XwnH7zk49URixViBmWHz6wIJ9vcFDA0WLJeGnwp5ky2MSDXw5J3CtgIb/boa2DXFQlKCN+3DGoVthTay+ptYm+3B+rOdLJW4UC6xfoJARk/DNSYWGHq29K3Clqs2Zg81sTgzTNkWkvENDM1/643E7uuOWxpUNvRzoMHLlX5h2XOk2MHlF9ItldF949O+OTAEkcZdmilcO1vbfAUTVPr0U+nqXv9VuWrnDgotlPpsL7BB5UJlQbkQT4sFhsqyuEriaIkDCvN9uRbSusU3ZlPz+gqGJvr0Ha7SZXUKOQNNrMqKLJUvP4CNV2wEvnpg/syLWItt6lSiZwjw6iyv7PxovoOhRZ247+BcmcTOqRbSUxsvlDZZVucFqY4x4acSmZL/SuJVvcL8dIGFI00If5i4XNsFDIE7+6zpjLlbrXD4joM5w0zMHW5GDd/w0zD81PtvjWnuVKIcOlrs4GKFxIaJAhPSooMJL90X9Qorx0XmWWsAtYsx9Ka3F9p4VKui3mNuVUocLHIijvmmTqXHtQo7rtlITjCwN1fEXZ5tGr7xZAz1qf2ssLXAQdWH0M03QcC9IdMttkfnyE+MeC94dINeky1gtfLEbhdjgm/qmw33O4k+KQINyj1uUxKB7DT6VhJI/n0hpP7N3WPoNKTT7vV7FfHp0dJy+itgWrqYf+k5BhPjbTAYBqNXqGwMG8PG6BFgY/R4ccawMWyMHgE2Ro8XZwwbw8boEWBj9HhxxrAxbIweATZGjxdnDBvDxugRYGP0eHHGsDFsjB4BNkaPF2cMG6NnzC9wVq9v7Esu2QAAAABJRU5ErkJggg=="
-                                                        width="60" style="width: 100%; height: auto;" alt="YCR">
-
-                                                    <img src="" alt="">
-                                                    <div id="box-1046300" style="height: 60px"></div>
-                                                    <label for="file-513" id="parent-1046300"
-                                                        style="width: 100%; height: 100%;position: absolute; bottom: 0px; right: 0px; z-index: 99; cursor: pointer">
-                                                        <i class="fa fa-camera upload-button"
-                                                            style="position: absolute; bottom: 5px; right: 7px; z-index: 99; padding: 5px;"></i>
-                                                        <input type="file" id="file-513" data-id="1046300"
-                                                            class="photo-upload" style="display: none"
-                                                            data-parent="#parent-1046300" data-feature="student"
-                                                            data-args="image" name="image" data-resize="600"
-                                                            accept="image/gif,image/jpeg,image/jpg,image/png"
-                                                            data-original-title="upload photos">
-                                                    </label>
-                                                    <!--                                                    <a class="" href="javascript:void();"  style="position: absolute; bottom: 1px; right: 2px; z-index: 99;">-->
-                                                    <!--                                                        <i class="fa fa-camera upload-button" style="color: #949494; padding: 6px;"></i>-->
-                                                    <!--                                                    </a>-->
-                                                </div>
-
-                                            </td>
-                                            <td>
-                                                Yuken Chamling Rai | BHCM-SEM-5,A
-
-                                                <br>
-                                            </td>
-                                            <td>Central-BHCM-2079-019</td>
-                                            <td></td>
-                                            <td></td>
-
-                                            <td></td>
-                                            <td>
-                                                <div id="password-1105394">
-                                                    e6fh8 </div>
-                                                <a title="Reset Password" href="javascript:void();"
-                                                    onclick="resetUsersPassword('1105394')"
-                                                    style="float:left;margin-right:5px">Reset</a>
-                                            </td>
-                                            <td class="btn-collection-sm">
-
-                                                <a class="btn btn-primary btn-sm mb-1" id="user-994569">Enabled</a>
-
-                                                <a class="btn btn-info btn-sm mb-1" id="user-result-994569">Result
-                                                    Enabled</a>
-                                                <a class="btn btn-success btn-sm mb-1"
-                                                    style="float:left;margin-right:5px">Edit</a>
-                                                <a class="btn btn-primary btn-sm mb-1"
-                                                    style="float:left;margin-right:5px">Detail</a>
-                                            </td>
-                                        </tr>
-                                        <tr class="tr-detailed" style="display: none;">
-                                            <td colspan="1" style="padding: 0; border: none !important;"></td>
-                                            <td colspan="6" style="padding: 0; border: none;">
-                                                <table class="table table-bordered detailed-inside-td"
-                                                    style="font-size: 14px; margin-bottom: 10px; border-color: #f2f2f2;">
-                                                    <thead>
-                                                        <tr>
-                                                            <td> Gender</td>
-                                                            <td> Father's Name </td>
-                                                            <td> Father's Phone </td>
-                                                            <td> Mother's Name </td>
-                                                            <td> Mother's Phone </td>
-                                                            <td>Phone</td>
-                                                            <td>Address</td>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td> Male </td>
-                                                            <td> </td>
-                                                            <td> </td>
-                                                            <td> </td>
-                                                            <td> </td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-
-
-                            </section>
-
-
-
-
+                                </tbody>
+                            </table>
                         </div>
 
                     </div>

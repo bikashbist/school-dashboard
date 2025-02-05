@@ -12,8 +12,11 @@ $body-color: #edf2fa;
 @use 'login';
 body {
     overflow-x: hidden;
-    font-family: 'Fira Sans', sans-serif !important;
+    font-family: "Roboto", serif;
     color: $gray-dark-color;
+}
+.bg-theme{
+    background-color:$body-color ;
 }
 
 p {
@@ -96,9 +99,18 @@ input.form-control.search-lg {
     border-radius: 10px;
     background: #528BFF;
 }
+.table-section {
+    overflow-x: auto;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    white-space: nowrap; /* Prevent line breaks */
+}
 
+/* Default: Hide scrollbar */
 ::-webkit-scrollbar {
-    width: 8px;
+    height: 8px; /* Set scrollbar height */
+    width: 6px; /* Set scrollbar width */
+    opacity: 0;
+    transition: opacity 0.3s;
 }
 
 /* Track */
@@ -117,6 +129,9 @@ input.form-control.search-lg {
 ::-webkit-scrollbar-thumb:hover {
     background: #a2a2a2;
 }
+
+
+
 
 .sidebar-header {
     position: sticky;
@@ -161,6 +176,8 @@ li.nav-item {
 
 #sidebar .nav-link.active {
     color: #222;
+    background: #edf2fa;
+    border-radius: 5px;
    
 }
 
