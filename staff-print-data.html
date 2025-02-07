@@ -641,67 +641,73 @@
                     <div class="box-page__header">
                         <div class="row">
                             <div class="col-lg-12">
-                                <div class="box-page__header--details d-flex justify-content-between mb-4">
-                                    <h1>Gender wise report</h1>
-
-
+                                <div
+                                    class="box-page__header--details d-flex justify-content-between mb-4 border-bottom">
+                                    <h1>Staff List</h1>
 
                                 </div>
+
                             </div>
 
                         </div>
                     </div>
-                    <div class="box-page__content">
-                        <div class="row">
-                            <section class="col-md-12">
+                    <div class="box-page__content ">
+
+                        <div class="row ">
+                            <section class="col-md-12 bg-theme py-4">
+                                <div class="row g-3">
+                                    <div class="col-lg-4">
+                                        <select id="classSelect" class="form-select">
+                                            <option selected=""> Select Class </option>
+                                            <option value="BBA-Sem-8">BBA-Sem-8</option>
+                                            <option value="BBA-Sem-6">BBA-Sem-6</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <select id="sectionSelect" class="form-select">
+                                            <option selected=""> Select Section </option>
+                                            <option value="A">All Section</option>
+                                            <option value="A">A</option>
+                                            <option value="B">B</option>
+                                        </select>
+                                    </div>
 
 
-                                <table class="table table-bordered">
+                                </div>
+
+
+
+                            </section>
+                            <section class="col-lg-12 text-center my-3">
+                                <button class="btn btn-info text-white ">
+                                    Print Report
+
+                                </button>
+                            </section>
+                            <section class="col-lg-12 table-section">
+                                <table
+                                    class="table tablePrint table table-borderd table-stripe table-hover table-sm reportTable"
+                                    style="width: 100%;">
                                     <thead>
                                         <tr>
-                                            <th rowspan="3"
-                                                style="text-align: center; vertical-align: middle; width: 50px;">S.N
-                                            </th>
-                                            <th rowspan="3"
-                                                style="text-align: center; vertical-align: middle; width: 150px;">Class
-                                            </th>
-                                            <th colspan="2" style="text-align: center; vertical-align: middle;">Section
-                                            </th>
-                                            <th rowspan="2" colspan="2"
-                                                style="text-align: center; vertical-align: middle;">Total</th>
-                                        </tr>
-                                        <tr>
-                                            <th colspan="2" style="text-align: center; vertical-align: middle;">A</th>
-                                        </tr>
-                                        <tr>
-                                            <th style="width: 60px; text-align: center;">M</th>
-                                            <th style="width: 60px; text-align: center;">F</th>
-                                            <th style="width: 60px; text-align: center;">M</th>
-                                            <th style="width: 60px; text-align: center;">F</th>
+                                            <th class="thead-th"> Sn.N </th>
+                                            <th class="thead-th"> Name </th>
+                                            <th class="thead-th"> Position </th>
+
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
+                                       
+                                        <tr data-from="Web">
                                             <td>1</td>
-                                            <td>BBA-2015-Batch</td>
-                                            <td style="text-align: center;">23</td>
-                                            <td style="text-align: center;">15</td>
-                                            <td style="text-align: center;">23</td>
-                                            <td style="text-align: center;">15</td>
+                                            <td>Ganesh Budathoki</td>
+                                            <td>BBA-Sem-4</td>
+                                         
                                         </tr>
-                                  
                                     </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <td colspan="4" style="text-align: right; font-weight: bold;">Total</td>
-                                            <td style="text-align: center;">273</td>
-                                            <td style="text-align: center;">240</td>
-                                        </tr>
-                                    </tfoot>
                                 </table>
 
                             </section>
-
 
 
 

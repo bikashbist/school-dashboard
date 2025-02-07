@@ -638,67 +638,422 @@
             <div class=" p-4">
 
                 <div class="box-page p-lg-4 p-3 box-height">
-                    <div class="box-page__header">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="box-page__header--details d-flex justify-content-between mb-4">
-                                    <h1>Gender wise report</h1>
-
-
-
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="box-page__content">
+                    <div class="box-page__content ">
+                        
                         <div class="row">
                             <section class="col-md-12">
 
 
-                                <table class="table table-bordered">
-                                    <thead>
-                                        <tr>
-                                            <th rowspan="3"
-                                                style="text-align: center; vertical-align: middle; width: 50px;">S.N
-                                            </th>
-                                            <th rowspan="3"
-                                                style="text-align: center; vertical-align: middle; width: 150px;">Class
-                                            </th>
-                                            <th colspan="2" style="text-align: center; vertical-align: middle;">Section
-                                            </th>
-                                            <th rowspan="2" colspan="2"
-                                                style="text-align: center; vertical-align: middle;">Total</th>
-                                        </tr>
-                                        <tr>
-                                            <th colspan="2" style="text-align: center; vertical-align: middle;">A</th>
-                                        </tr>
-                                        <tr>
-                                            <th style="width: 60px; text-align: center;">M</th>
-                                            <th style="width: 60px; text-align: center;">F</th>
-                                            <th style="width: 60px; text-align: center;">M</th>
-                                            <th style="width: 60px; text-align: center;">F</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>BBA-2015-Batch</td>
-                                            <td style="text-align: center;">23</td>
-                                            <td style="text-align: center;">15</td>
-                                            <td style="text-align: center;">23</td>
-                                            <td style="text-align: center;">15</td>
-                                        </tr>
-                                  
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <td colspan="4" style="text-align: right; font-weight: bold;">Total</td>
-                                            <td style="text-align: center;">273</td>
-                                            <td style="text-align: center;">240</td>
-                                        </tr>
-                                    </tfoot>
-                                </table>
+                                <ul class="nav nav-tabs nav-underline" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link px-4 active" id="add-1-tab" data-bs-toggle="tab"
+                                            data-bs-target="#add-1-tab-pane" type="button" role="tab"
+                                            aria-controls="add-1-tab-pane" aria-selected="true">
+                                            Add Staff
+                                         
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link px-4" id="two-list" data-bs-toggle="tab"
+                                            data-bs-target="#two-list-pane" type="button" role="tab"
+                                            aria-controls="two-list-pane" aria-selected="false"> 
+                                             List Staff
+                                          
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link px-4" id="three-tab" data-bs-toggle="tab"
+                                            data-bs-target="#three-tab-pane" type="button" role="tab"
+                                            aria-controls="three-tab-pane" aria-selected="false"> 
+                                            Disabled List
+                                          
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link px-4" id="four-tab" data-bs-toggle="tab"
+                                            data-bs-target="#four-tab-pane" type="button" role="tab"
+                                            aria-controls="four-tab-pane" aria-selected="false"> 
+                                            Staff Hierarchy
+                                          
+                                        </button>
+                                    </li>
+
+                                    
+                                </ul>
+                                <div class="tab-content mt-lg-4" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="add-1-tab-pane" role="tabpanel"
+                                        aria-labelledby="add-1-tab" tabindex="0">
+                                        <form   method="POST">
+                                            
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <div class="form-group mb-3">
+                                                        <label for="" class="form-lable">Name</label>
+                                                        <input type="text" name="name" class="form-control" placeholder="Add Name"
+                                                            >
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-group mb-3">
+                                                        <label for="" class="form-lable">
+                                                            नाम in Nepali
+                                                            </label>
+                                                        <input type="text" name="name" class="form-control" placeholder="Add Name"
+                                                            >
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-group mb-3">
+                                                        <label for="" class="form-lable">Email</label>
+                                                        <input type="text" name="email" class="form-control" placeholder="Add Name"
+                                                            >
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-group mb-3">
+                                                        <label for="" class="form-lable">Official Email</label>
+                                                        <input type="text" name="name" class="form-control" placeholder="Add Name"
+                                                            >
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-group mb-3">
+                                                        <label for="" class="form-lable">Phone</label>
+                                                        <input type="text" name="name" class="form-control" placeholder="Add Name"
+                                                            >
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-group mb-3">
+                                                        <label for="" class="form-lable">Username</label>
+                                                        <input type="text" name="name" class="form-control" placeholder="Add Name"
+                                                            >
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-group mb-3">
+                                                        <label for="" class="form-lable">Image</label>
+                                                        <input type="file" class="form-control" 
+                                                            ="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-group mb-3">
+                                                        <label class="d-flex mb-1"> Department  <span class="required">*</span> <div class="add-department"> <i class="fa-solid fa-circle-plus ms-2 text-primary"></i></div></label>
+                                                        <select name="gender" class="form-control" required="">
+                                                            <option value="Male">Select Department</option>
+                                                            <option value="Female">Female</option>
+                                                            <option value="Others">Others</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-group mb-3">
+                                                        <label class="d-flex mb-1"> Position  <span class="required">*</span> <div class="add-department"> <i class="fa-solid fa-circle-plus ms-2 text-primary"></i></div></label>
+                                                        <select name="gender" class="form-control" required="">
+                                                            <option value="Male">Select Position</option>
+                                                            <option value="Female">Female</option>
+                                                            <option value="Others">Others</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-group mb-3">
+                                                        <label class="d-flex mb-1"> Staff Type  </label>
+                                                        <select name="gender" class="form-control" required="">
+                                                            <option value="Male">Select Position</option>
+                                                            <option value="Female">Female</option>
+                                                            <option value="Others">Others</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-group mb-3">
+                                                        <label for="" class="form-lable">School Joined Date</label>
+                                                        <input type="date" class="form-control" 
+                                                            ="">
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                            <h1>Others Details</h1>
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <div class="form-group mb-3">
+                                                        <label class="d-flex mb-1"> Position  <span class="required">*</span> <div class="add-department"> <i class="fa-solid fa-circle-plus ms-2 text-primary"></i></div></label>
+                                                        <select name="gender" class="form-control" required="">
+                                                            <option value="Male">Select Position</option>
+                                                            <option value="Female">Female</option>
+                                                            <option value="Others">Others</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-group mb-3">
+                                                        <label class="d-flex mb-1"> Staff Type  </label>
+                                                        <select name="gender" class="form-control" required="">
+                                                            <option value="Male">Select Position</option>
+                                                            <option value="Female">Female</option>
+                                                            <option value="Others">Others</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-group mb-3">
+                                                        <label for="" class="form-lable">School Joined Date</label>
+                                                        <input type="date" class="form-control" 
+                                                            ="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-group mb-3">
+                                                        <label class="d-flex mb-1"> Position  <span class="required">*</span> <div class="add-department"> <i class="fa-solid fa-circle-plus ms-2 text-primary"></i></div></label>
+                                                        <select name="gender" class="form-control" required="">
+                                                            <option value="Male">Select Position</option>
+                                                            <option value="Female">Female</option>
+                                                            <option value="Others">Others</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-group mb-3">
+                                                        <label class="d-flex mb-1"> Staff Type  </label>
+                                                        <select name="gender" class="form-control" required="">
+                                                            <option value="Male">Select Position</option>
+                                                            <option value="Female">Female</option>
+                                                            <option value="Others">Others</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-group mb-3">
+                                                        <label for="" class="form-lable">School Joined Date</label>
+                                                        <input type="date" class="form-control" 
+                                                            ="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-group mb-3">
+                                                        <label class="d-flex mb-1"> Position  <span class="required">*</span> <div class="add-department"> <i class="fa-solid fa-circle-plus ms-2 text-primary"></i></div></label>
+                                                        <select name="gender" class="form-control" required="">
+                                                            <option value="Male">Select Position</option>
+                                                            <option value="Female">Female</option>
+                                                            <option value="Others">Others</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-group mb-3">
+                                                        <label class="d-flex mb-1"> Staff Type  </label>
+                                                        <select name="gender" class="form-control" required="">
+                                                            <option value="Male">Select Position</option>
+                                                            <option value="Female">Female</option>
+                                                            <option value="Others">Others</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-group mb-3">
+                                                        <label for="" class="form-lable">School Joined Date</label>
+                                                        <input type="date" class="form-control" 
+                                                            ="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                           
+
+                                            <div class="form-group">
+                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                            </div>
+
+
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane fade" id="two-list-pane" role="tabpanel"
+                                        aria-labelledby="two-list" tabindex="0">
+                                   
+                                            <div class="table-responsive">
+
+                                                <table class="table mt-lg-4">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>
+                                                                <input id="select_all" value="1" type="checkbox">
+                                                                <br>
+                                                                <span>All</span>
+                                                            </th>
+                                                            <th>Image</th>
+                                                            <th>Name</th>
+                                                            <th>Username</th>
+                                                            <th>Father Phone</th>
+                                                            <th>Mother Phone</th>
+            
+                                                            <th>Student Previous Code</th>
+                                                            <th>Password</th>
+                                                            <th>Action</th>
+            
+                                                        </tr>
+                                                    </thead>
+            
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <input class="usercheck" name="usercheck[]" type="checkbox">
+                                                            </td>
+                                                            <td>
+                                                                <div>
+                                                                    <img class="rounded-circle " src="https://images.unsplash.com/photo-1622861431942-b45f2b5b6564?q=80&amp;w=1886&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="60" height="60" alt="TK">
+                                                                </div>
+            
+                                                            </td>
+                                                            <td>
+                                                                Kalpana Koirala | BHM-Sem-5,A
+            
+                                                                <br>
+                                                            </td>
+                                                            <td>Central-BHM-2079-011</td>
+                                                            <td>9840888948</td>
+                                                            <td>9841678857</td>
+            
+                                                            <td></td>
+                                                            <td>
+                                                                <div>
+                                                                    tfstx </div>
+                                                                <a href="#" class="text-primary">Reset</a>
+                                                            </td>
+                                                            <td>
+            
+                                                                <a class="btn btn-primary btn-sm mb-1 ">Enabled</a>
+            
+                                                                <a class="btn btn-info btn-sm mb-1 ">Result
+                                                                    Enabled</a>
+                                                                <a class="btn btn-success btn-sm mb-1 ">Edit</a>
+                                                                <a class="btn btn-primary btn-sm mb-1 ">Detail</a>
+                                                            </td>
+                                                        </tr>
+            
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                
+                
+                                    
+
+                                    </div>
+                                    <div class="tab-pane fade" id="three-tab-pane" role="tabpanel"
+                                    aria-labelledby="three-tab" tabindex="0">
+                                    <div class="col-lg-12 table-section mt-4">
+
+
+                                        <table id="dataTable" class="table table-striped">
+                                            <thead class="table-primary">
+                                                <tr>
+                                                    <th style="width: 200px;">Name</th>
+                                                    <th>User Name</th>
+                                                    <th>Student Previous Code</th>
+                                                    <th>Dummy Password</th>
+                                                    <th>Logged-In</th>
+                                                    <th>Gender</th>
+                                                    <th>Student ID</th>
+                                                    <th>Team</th>
+                                                   
+                                                   
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                               
+                                              
+                                                <tr>
+                                                    <td>Sarah Smith</td>
+                                                    <td>sarahs456</td>
+                                                    <td>STU-2023-002</td>
+                                                    <td>Test@5678</td>
+                                                    <td>No</td>
+                                                    <td>Female</td>
+                                                    <td>1002</td>
+                                                    <td>Blue Tigers</td>
+                                                   
+                                                </tr>
+                                                <tr>
+                                                    <td>Sarah Smith</td>
+                                                    <td>sarahs456</td>
+                                                    <td>STU-2023-002</td>
+                                                    <td>Test@5678</td>
+                                                    <td>No</td>
+                                                    <td>Female</td>
+                                                    <td>1002</td>
+                                                    <td>Blue Tigers</td>
+                                                   
+                                                </tr>
+                                                
+                                                
+                                            </tbody>
+                                        </table>
+            
+            
+                                    </div>
+
+                                </div>
+                                <div class="tab-pane fade" id="four-tab-pane" role="tabpanel"
+                                aria-labelledby="four-tab" tabindex="0">
+                                <div class="col-lg-12 table-section mt-4">
+
+
+                                    <table id="dataTable" class="table table-striped">
+                                        <thead class="table-primary">
+                                            <tr>
+                                                <th style="width: 200px;">Name</th>
+                                                <th>User Name</th>
+                                                <th>Student Previous Code</th>
+                                                <th>Dummy Password</th>
+                                                <th>Logged-In</th>
+                                                <th>Gender</th>
+                                                <th>Student ID</th>
+                                                <th>Team</th>
+                                                
+                                               
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                           
+                                          
+                                            <tr>
+                                                <td>Sarah Smith</td>
+                                                <td>sarahs456</td>
+                                                <td>STU-2023-002</td>
+                                                <td>Test@5678</td>
+                                                <td>No</td>
+                                                <td>Female</td>
+                                                <td>1002</td>
+                                                <td>Blue Tigers</td>
+                                               
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td>Sarah Smith</td>
+                                                <td>sarahs456</td>
+                                                <td>STU-2023-002</td>
+                                                <td>Test@5678</td>
+                                                <td>No</td>
+                                                <td>Female</td>
+                                                <td>1002</td>
+                                                <td>Blue Tigers</td>
+                                               
+                                                
+                                            </tr>
+                                            
+                                            
+                                        </tbody>
+                                    </table>
+        
+        
+                                </div>
+
+                            </div>
+
+                                </div>
+
 
                             </section>
 

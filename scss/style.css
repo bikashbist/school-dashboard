@@ -346,7 +346,7 @@ li.nav-item {
   height: 100%;
   flex-shrink: 0;
   border-radius: 4px;
-  padding: 20px 16px;
+  padding: 20px 20px;
   border: 1px solid #d3e3fd;
   background-color: #fff;
 }
@@ -372,41 +372,39 @@ li.nav-item {
   height: 100%;
 }
 
-.stats {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 34px;
+.list-overview {
+  gap: 63px;
   list-style: none;
-  max-width: 389px;
+  max-width: 370px;
   margin: 0px auto;
-  padding: 0px;
+  border: 2px solid #d3e3fd;
+  padding: 15px 30px;
 }
-.stats .chip {
+.list-overview .chip {
   width: 12px;
   height: 12px;
   border-radius: 2px;
 }
-.stats .stats-title {
+.list-overview .list-overview-title {
   display: flex;
   gap: 16px;
   align-items: center;
 }
-.stats p {
+.list-overview p {
   margin-bottom: 0px;
 }
-.stats .divider {
+.list-overview .divider {
   width: 2px;
   height: 60px;
   background: rgb(211, 227, 253);
 }
-.stats .divider:last-child {
+.list-overview .divider:last-child {
   display: none;
 }
-.stats li {
+.list-overview li {
   flex-shrink: 0;
 }
-.stats li h6 {
+.list-overview li h6 {
   color: var(--Alias-token-content-primary);
   font-size: 25px;
   font-weight: 600;
@@ -420,7 +418,7 @@ li.nav-item {
   height: 100%;
   flex-shrink: 0;
   border-radius: 4px;
-  padding: 20px 16px;
+  padding: 20px 20px;
   border: 1px solid #d3e3fd;
   background-color: #ffffff;
 }
@@ -444,7 +442,7 @@ li.nav-item {
 
 .weather {
   background-color: #1977b8;
-  padding: 20px 16px;
+  padding: 20px 20px;
   border-radius: 5px;
 }
 
@@ -478,7 +476,7 @@ li.nav-item {
   height: 100%;
   flex-shrink: 0;
   border-radius: 4px;
-  padding: 20px 16px;
+  padding: 20px 20px;
   border: 1px solid #d3e3fd;
 }
 .aside-part .flatpickr-calendar {
@@ -555,6 +553,13 @@ li.nav-item {
   border: 1px solid #d3e3fd;
   background-color: #ffffff;
 }
+.box-page label {
+  display: inline-block;
+  font-size: 14px;
+}
+.box-page .form-control {
+  font-size: 14px;
+}
 .box-page__header h1 {
   font-size: 18px;
   font-weight: 500;
@@ -611,11 +616,6 @@ li.nav-item {
 }
 .nav-tabs .nav-link {
   color: #858c94;
-}
-.nav-tabs .nav-link.active {
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
 }
 
 .form-select {

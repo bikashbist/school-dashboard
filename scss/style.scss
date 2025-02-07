@@ -356,7 +356,7 @@ li.nav-item {
     height: 100%;
     flex-shrink: 0;
     border-radius: 4px;
-    padding: 20px 16px;
+    padding: 20px 20px;
     border: 1px solid $border-color;
     background-color: #fff;
 
@@ -389,15 +389,13 @@ li.nav-item {
     height: 100%;
 }
 
-.stats {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 34px;
+.list-overview {
+    gap: 63px;
     list-style: none;
-    max-width: 389px;
+    max-width: 370px;
     margin: 0px auto;
-    padding: 0px;
+    border: 2px solid #d3e3fd;
+    padding: 15px 30px;
 
 
     .chip {
@@ -406,7 +404,7 @@ li.nav-item {
         border-radius: 2px;
     }
 
-    .stats-title {
+    .list-overview-title {
         display: flex;
         gap: 16px;
         align-items: center;
@@ -445,7 +443,7 @@ li.nav-item {
     height: 100%;
     flex-shrink: 0;
     border-radius: 4px;
-    padding: 20px 16px;
+    padding: 20px 20px;
     border: 1px solid $border-color;
     background-color: #ffffff;
 
@@ -474,7 +472,7 @@ li.nav-item {
 }
 .weather{
     background-color: $bg-header;
-    padding: 20px 16px;
+    padding: 20px 20px;
     border-radius: 5px;
 }
 .aside-part {
@@ -520,7 +518,7 @@ li.nav-item {
         height: 100%;
         flex-shrink: 0;
         border-radius: 4px;
-        padding: 20px 16px;
+        padding: 20px 20px;
         border: 1px solid $border-color;
     }
 
@@ -663,6 +661,13 @@ li.nav-item {
     padding: 15px;
     border: 1px solid $border-color;
     background-color: #ffffff;
+    label {
+        display: inline-block;
+        font-size: 14px;
+    }
+    .form-control {
+        font-size: 14px;
+    }
 
     &__header {
         h1 {
@@ -751,11 +756,7 @@ li.nav-item {
     .nav-link {
         color: #858c94;
 
-        &.active {
-            border-top: 0;
-            border-left: 0;
-            border-right: 0;
-        }
+        
     }
 }
 
