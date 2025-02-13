@@ -1,0 +1,1839 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="scss/style.css">
+    <style>
+        label.form-label {
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d-flex">
+        <nav id="sidebar">
+            <div class="sidebar-header text-center  p-3 ">
+                <a href="index.html">
+                    <img class="w-75 " src="images/logo.png" alt="logo">
+                </a>
+                <b class="d-block">Verve Innovation </b>
+                <small> Dhumbarahi, Kathmandu</small>
+
+
+            </div>
+            <ul class="nav ">
+
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center active"
+                        href="#submenu7" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="submenu7">
+                        <span><img src="images/icon-latest/student.png" alt="e-learning"> Students</span>
+                        <i class="fas fa-angle-down dropdown-icon"></i>
+                    </a>
+                    <ul class="collapse list-unstyled ps-3" id="submenu7">
+                        <li><a class="nav-link" href="student-search.html">Search</a></li>
+                        <li><a class="nav-link" href="student-list.html">Student List</a></li>
+                        <li><a class="nav-link" href="print-data.html">Print Data</a></li>
+                        <li><a class="nav-link" href="download-data.html">Download Data</a></li>
+                        <li><a class="nav-link" href="bulk-edit.html">Bulk Edit </a></li>
+                        <li><a class="nav-link" href="student-group.html">Student Group</a></li>
+                        <li><a class="nav-link" href="bus-student.html">Bus Students</a></li>
+                        <li><a class="nav-link" href="lunch-student.html">Lunch Students</a></li>
+                        <li><a class="nav-link" href="admit-card.html">Admit Card</a></li>
+                        <li><a class="nav-link" href="id-card.html">Id Card</a></li>
+                        <li><a class="nav-link" href="certificate.html">Certificates</a></li>
+                        <li><a class="nav-link" href="add-student.html">Add Students</a></li>
+                        <li><a class="nav-link" href="new-student.html">New Students</a></li>
+                        <li><a class="nav-link" href="left-student.html">Left Students</a></li>
+                        <li><a class="nav-link" href="student-pick-up-resort.html">Student Pick Up Report</a></li>
+                        <li><a class="nav-link" href="admission-request.html">Admission Request</a></li>
+                        <li><a class="nav-link" href="online-registeration.html">Online Registration Request</a></li>
+                        <li><a class="nav-link" href="admission-payment.html">Adminssion Payments</a></li>
+                        <li><a class="nav-link" href="#">Previous Record</a></li>
+                        <li><a class="nav-link" href="gender-wise-report.html">Gender Report</a></li>
+                        <li><a class="nav-link" href="team-report.html">Team Report</a></li>
+                        <li><a class="nav-link" href="">Id Card Builder</a></li>
+                        <li><a class="nav-link" href="#">Certificate Builder</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center"
+                        href="#submenu22" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="submenu22">
+                        <span><img src="images/icon-latest/receptionist.png" alt="e-learning"> Teachers</span>
+                        <i class="fas fa-angle-down dropdown-icon"></i>
+                    </a>
+                    <ul class="collapse list-unstyled ps-3" id="submenu22">
+                        <li><a class="nav-link" href="#">Add/Edit</a></li>
+                        <li><a class="nav-link" href="#">List</a></li>
+                        <li><a class="nav-link" href="#">Print Data</a></li>
+                        <li><a class="nav-link" href="#">Staff Data</a></li>
+                        <li><a class="nav-link" href="#">Staff Qualification</a></li>
+                        <li><a class="nav-link" href="#">Staff Department</a></li>
+                        <li><a class="nav-link" href="#">Download Data</a></li>
+                        <li><a class="nav-link" href="#">Staff Leave Notes</a></li>
+                        <li><a class="nav-link" href="#">User Type</a></li>
+                        <li><a class="nav-link" href="#">Assign User Type</a></li>
+                        <li><a class="nav-link" href="#">Recruitment Report</a></li>
+                        <li><a class="nav-link" href="#">Vacany</a></li>
+                        <li><a class="nav-link" href="#">
+                                Import Staffs
+                            </a></li>
+                        <li><a class="nav-link" href="#">ID Card Builder</a></li>
+                        <li><a class="nav-link" href="#">Profie Request</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center"
+                        href="#submenu6" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="submenu6">
+                        <span><img src="images/icon-latest/online-learning.png" alt="e-learning"> Course Plan</span>
+                        <i class="fas fa-angle-down dropdown-icon"></i>
+                    </a>
+                    <ul class="collapse list-unstyled ps-3" id="submenu6">
+                        <li><a class="nav-link" href="teaching-method.html">Teaching Methods</a></li>
+                        <li><a class="nav-link" href="chapter.html">Cahpters</a></li>
+                        <li><a class="nav-link" href="course-plan.html">Course Plan</a></li>
+                        <li><a class="nav-link" href="lession-plan.html">Lesson Plan</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center"
+                        href="#submenu5" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="submenu5">
+                        <span><img src="images/icon-latest/settings.png" alt="e-learning"> Setup</span>
+                        <i class="fas fa-angle-down dropdown-icon"></i>
+                    </a>
+                    <ul class="collapse list-unstyled ps-3" id="submenu5">
+                        <li><a class="nav-link" href="bus-routes.html">Bus-Routes</a></li>
+                        <li><a class="nav-link" href="routes-map.html">Routes-Map</a></li>
+                        <li><a class="nav-link" href="color-setting.html">Color Settings</a></li>
+                        <li><a class="nav-link" href="launching-image.html">Launching Image</a></li>
+                        <li><a class="nav-link" href="home.html">Home</a></li>
+                        <li><a class="nav-link" href="about.html">About</a></li>
+                        <li><a class="nav-link" href="subject.html">Subjects</a></li>
+                        <li><a class="nav-link" href="section.html">Section</a></li>
+                        <li><a class="nav-link" href="program.html">Program</a></li>
+                        <li><a class="nav-link" href="team-category.html">Team Category</a></li>
+                        <li><a class="nav-link" href="assignment-category.html">Assignment Category</a></li>
+                        <li><a class="nav-link" href="calender-category.html">Calendar Category</a></li>
+                        <li><a class="nav-link" href="calendar.html">Calendar</a></li>
+
+                        <li><a class="nav-link" href="calender-event.html">Calendar Evnts-BS</a></li>
+
+                        <li><a class="nav-link" href="class-routine.html">Class Routine</a></li>
+
+                        <li><a class="nav-link" href="setup-student-group.html">Student Group</a></li>
+                        <li><a class="nav-link" href="group-class-association.html">Group Class Association</a></li>
+                        <li><a class="nav-link" href="import-student.html">Import Students</a></li>
+                        <li><a class="nav-link" href="student-image-bulk-upload.html">Student Image Bulk Upload</a></li>
+                        <li><a class="nav-link" href="restirict-mobile-feature.html">Restrict Mobile Features</a></li>
+                        <li><a class="nav-link" href="access-category.html">Access Category</a></li>
+                        <li><a class="nav-link" href="setup-configuration.html">Configuration</a></li>
+                        <li><a class="nav-link" href="#">Academic Year</a></li>
+                        <li><a class="nav-link" href="#">Bank Details</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  dropdown-toggle d-flex justify-content-between align-items-center "
+                        href="#submenu1" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="submenu1">
+                        <span><img src="images/icon-latest/video-lesson.png" alt="icon"> Online Class</span>
+                        <i class="fas fa-angle-down dropdown-icon"></i>
+                    </a>
+                    <ul class="collapse list-unstyled ps-3" id="submenu1">
+                        <li><a class="nav-link" href="start-class.html">Start Class</a></li>
+                        <li><a class="nav-link" href="report.html">Report</a></li>
+                        <li><a class="nav-link" href="account-configuration.html">Account Configuration</a></li>
+                        <li><a class="nav-link" href="configuration.html">Configuration</a></li>
+
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center"
+                        href="#submenu2" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="submenu2">
+                        <span><img src="images/icon-latest/class-room.png" alt="e-learning"> E-Classroom</span>
+                        <i class="fas fa-angle-down dropdown-icon"></i>
+                    </a>
+                    <ul class="collapse list-unstyled ps-3" id="submenu2">
+                        <li><a class="nav-link" href="exam.html">Exam</a></li>
+                        <li><a class="nav-link" href="exam-details.html">Exam Detail</a></li>
+                        <li><a class="nav-link" href="add-questions-answers.html">Add Questions/Answers</a></li>
+                        <li><a class="nav-link" href="copy-question-answer.html">Copy Questions/Answers</a></li>
+                        <li><a class="nav-link" href="list.html">List</a></li>
+                        <li><a class="nav-link" href="statistics.html">Statistics</a></li>
+                        <li><a class="nav-link" href="ledger.html">Ledger</a></li>
+                        <li><a class="nav-link" href="add-category.html">Add Category</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center"
+                        href="#submenu3" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="submenu3">
+                        <span><img src="images/icon-latest/world-wide-web.png" alt="e-learning"> Website</span>
+                        <i class="fas fa-angle-down dropdown-icon"></i>
+                    </a>
+                    <ul class="collapse list-unstyled ps-3" id="submenu3">
+                        <li><a class="nav-link" href="volunteer.html">Volunteer</a></li>
+                        <li><a class="nav-link" href="facility-activity.html">Facility/Activity</a></li>
+                        <li><a class="nav-link" href="news.html">News</a></li>
+                        <li><a class="nav-link" href="history.html">History</a></li>
+                        <li><a class="nav-link" href="alumni.html">Alumni</a></li>
+                        <li><a class="nav-link" href="testimonials.html">Testimonial</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center"
+                        href="#submenu4" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="submenu4">
+                        <span><img src="images/icon-latest/graph.png" alt="e-learning"> Analytics</span>
+                        <i class="fas fa-angle-down dropdown-icon"></i>
+                    </a>
+                    <ul class="collapse list-unstyled ps-3" id="submenu4">
+                        <li><a class="nav-link" href="">Monitor Supervisor</a></li>
+                        <li><a class="nav-link" href="homework.html">Homework</a></li>
+                        <li><a class="nav-link" href="#">Staff</a></li>
+                        <li><a class="nav-link" href="online-class-report.html">Online Class Report</a></li>
+                        <li><a class="nav-link" href="#">Weekly Report</a></li>
+                        <li><a class="nav-link" href="e-payment-transactions.html">E Payment Transactions</a></li>
+                        <li><a class="nav-link" href="#">Assignments</a></li>
+
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html"><img src="images/icons/Change password icon.svg"
+                            alt="e-learning"> Login</a>
+                </li>
+
+
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="images/icon-latest/risk-evaluation.png" alt="e-learning">
+                        Students'
+                        Evaluation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="images/icon-latest/calendar.png" alt="e-learning">
+                        Routine</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center"
+                        href="#submenu8" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="submenu8">
+                        <span><img src="images/icon-latest/notification.png" alt="e-learning"> Notifications</span>
+                        <i class="fas fa-angle-down dropdown-icon"></i>
+                    </a>
+                    <ul class="collapse list-unstyled ps-3" id="submenu8">
+                        <li><a class="nav-link" href="#">Suggestion/Apprecia..</a></li>
+                        <li><a class="nav-link" href="#">Push Notifications</a></li>
+                        <li><a class="nav-link" href="#">SMS Notifications</a></li>
+                        <li><a class="nav-link" href="#">Visitors Record</a></li>
+                        <li><a class="nav-link" href="#">Import Account</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center"
+                        href="#submenu9" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="submenu9">
+                        <span><img src="images/icons/QR code.svg" alt="e-learning"> Qr Code</span>
+                        <i class="fas fa-angle-down dropdown-icon"></i>
+                    </a>
+                    <ul class="collapse list-unstyled ps-3" id="submenu9">
+                        <li><a class="nav-link" href="#">Lunch Attendance</a></li>
+                        <li><a class="nav-link" href="#">Daily Attendance</a></li>
+                        <li><a class="nav-link" href="#">Bus Attendance</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="images/icons/Merit icon.svg" alt="e-learning">Merit</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="images/icons/Attendance icon.svg"
+                            alt="e-learning">Attendance</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="images/icons/Group attendance icon.svg"
+                            alt="e-learning">Group Attendance</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="images/icons/Group attendance icon.svg" alt="e-learning">Bus
+                        Attendance</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="images/icons/Leave notes icon.svg" alt="e-learning">Leave
+                        Notes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="images/icons/Homework icon.svg" alt="e-learning">Homework</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="images/icons/Check homework icon.svg" alt="e-learning">Check
+                        Homework</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="images/icons/Assignment icon.svg"
+                            alt="e-learning">Assignments</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="images/icons/Reading material icon.svg"
+                            alt="e-learning">Reading Materials</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center"
+                        href="#submenu10" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="submenu10">
+                        <span><img src="images/icons/Records icon.svg" alt="e-learning"> Records</span>
+                        <i class="fas fa-angle-down dropdown-icon"></i>
+                    </a>
+                    <ul class="collapse list-unstyled ps-3" id="submenu10">
+                        <li><a class="nav-link" href="#">Category</a></li>
+                        <li><a class="nav-link" href="#">Sub Category</a></li>
+                        <li><a class="nav-link" href="#">Report</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center"
+                        href="#submenu11" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="submenu11">
+                        <span><img src="images/icons/Document upload icon.svg" alt="e-learning"> Dcuments Upload</span>
+                        <i class="fas fa-angle-down dropdown-icon"></i>
+                    </a>
+                    <ul class="collapse list-unstyled ps-3" id="submenu11">
+                        <li><a class="nav-link" href="#">Documents Category</a></li>
+                        <li><a class="nav-link" href="#">Uploaded Documents</a></li>
+                        <li><a class="nav-link" href="#">Staff Documents</a></li>
+
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="images/icons/Daily report icon.svg" alt="e-learning">Daily
+                        Report</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center"
+                        href="#submenu12" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="submenu12">
+                        <span><img src="images/icons/Exam icon.svg" alt="e-learning"> Exams</span>
+                        <i class="fas fa-angle-down dropdown-icon"></i>
+                    </a>
+                    <ul class="collapse list-unstyled ps-3" id="submenu12">
+                        <li><a class="nav-link" href="#">Add Exam</a></li>
+                        <li><a class="nav-link" href="#">Print Exam Routine</a></li>
+                        <li><a class="nav-link" href="#">Add/Edit Marks</a></li>
+                        <li><a class="nav-link" href="#">Selective Remarks</a></li>
+                        <li><a class="nav-link" href="#">Selective Remarks List</a></li>
+                        <li><a class="nav-link" href="#">Statistics</a></li>
+                        <li><a class="nav-link" href="#">Student Specific Remarks</a></li>
+                        <li><a class="nav-link" href="#">Manual Attendance</a></li>
+                        <li><a class="nav-link" href="#">Subject Attendance</a></li>
+                        <li><a class="nav-link" href="#">Studet Exam Details</a></li>
+                        <li><a class="nav-link" href="#">Room Allocation Report</a></li>
+                        <li><a class="nav-link" href="#">All Report Card</a></li>
+                        <li><a class="nav-link" href="#">Mobile App Setting</a></li>
+                        <li><a class="nav-link" href="#">Import Results</a></li>
+                        <li><a class="nav-link" href="#">Migrate Result Subject</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center"
+                        href="#submenu13" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="submenu13">
+                        <span><img src="images/icons/Ledgers icon.svg" alt="e-learning"> Ledgers</span>
+                        <i class="fas fa-angle-down dropdown-icon"></i>
+                    </a>
+                    <ul class="collapse list-unstyled ps-3" id="submenu13">
+                        <li><a class="nav-link" href="#">Detail Ledger</a></li>
+                        <li><a class="nav-link" href="#">Comparative Ledger</a></li>
+                        <li><a class="nav-link" href="#">Top-10</a></li>
+                        <li><a class="nav-link" href="#">Group Ledger</a></li>
+                        <li><a class="nav-link" href="#">Boarder Students</a></li>
+                        <li><a class="nav-link" href="#">Failure List</a></li>
+                        <li><a class="nav-link" href="#">Result Analysis</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center"
+                        href="#submenu14" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="submenu14">
+                        <span><img src="images/icons/Exam icon.svg" alt="e-learning"> Group Exam</span>
+                        <i class="fas fa-angle-down dropdown-icon"></i>
+                    </a>
+                    <ul class="collapse list-unstyled ps-3" id="submenu14">
+                        <li><a class="nav-link" href="#">Import Group Result</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center"
+                        href="#submenu15" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="submenu15">
+                        <span><img src="images/icons/General evaluation icon.svg" alt="e-learning"> General
+                            Evaluation</span>
+                        <i class="fas fa-angle-down dropdown-icon"></i>
+                    </a>
+                    <ul class="collapse list-unstyled ps-3" id="submenu15">
+                        <li><a class="nav-link" href="#">Add Objective</a></li>
+                        <li><a class="nav-link" href="#">Copy Objective</a></li>
+                        <li><a class="nav-link" href="#">Add/Edit Marks</a></li>
+                        <li><a class="nav-link" href="#">Manage Entry Marks</a></li>
+                        <li><a class="nav-link" href="#">
+                                Import Results
+                            </a></li>
+                        <li><a class="nav-link" href="#">GE Result Analysis</a></li>
+                        <li><a class="nav-link" href="#">Ledger</a></li>
+                        <li><a class="nav-link" href="#">Top 10</a></li>
+                        <li><a class="nav-link" href="#">Failure List</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center"
+                        href="#submenu16" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="submenu16">
+                        <span><img src="images/icons/General evaluation icon.svg" alt="e-learning"> Class
+                            Evaluation</span>
+                        <i class="fas fa-angle-down dropdown-icon"></i>
+                    </a>
+                    <ul class="collapse list-unstyled ps-3" id="submenu16">
+                        <li><a class="nav-link" href="#">Evaluation Areas</a></li>
+                        <li><a class="nav-link" href="#">Assign Evaluations Areas</a></li>
+                        <li><a class="nav-link" href="#">Add Evaluation</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center"
+                        href="#submenu17" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="submenu17">
+                        <span><img src="images/icons/General evaluation icon.svg" alt="e-learning"> Teacher's
+                            Evaluation</span>
+                        <i class="fas fa-angle-down dropdown-icon"></i>
+                    </a>
+                    <ul class="collapse list-unstyled ps-3" id="submenu17">
+                        <li><a class="nav-link" href="#">Evaluation Areas</a></li>
+                        <li><a class="nav-link" href="#">Evaluation Categories</a></li>
+                        <li><a class="nav-link" href="#">Add Questions/Answers</a></li>
+                        <li><a class="nav-link" href="#">Evaluation Report</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center"
+                        href="#submenu18" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="submenu18">
+                        <span><img src="images/icons/CAS icon.svg" alt="e-learning"> CAS</span>
+                        <i class="fas fa-angle-down dropdown-icon"></i>
+                    </a>
+                    <ul class="collapse list-unstyled ps-3" id="submenu18">
+                        <li><a class="nav-link" href="#">Add Objective</a></li>
+                        <li><a class="nav-link" href="#">CAS Result</a></li>
+                        <li><a class="nav-link" href="#">Copy Objective/Question</a></li>
+                        <li><a class="nav-link" href="#">Import Result</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center"
+                        href="#submenu19" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="submenu19">
+                        <span><img src="images/icons/Selective exam.svg" alt="e-learning"> Selective Exam</span>
+                        <i class="fas fa-angle-down dropdown-icon"></i>
+                    </a>
+                    <ul class="collapse list-unstyled ps-3" id="submenu19">
+                        <li><a class="nav-link" href="#">Add Objective</a></li>
+                        <li><a class="nav-link" href="#">Copy Objectives</a></li>
+                        <li><a class="nav-link" href="#">Add/Edit Answers</a></li>
+                        <li><a class="nav-link" href="#">Student Wise Answers</a></li>
+                        <li><a class="nav-link" href="#">Ledger</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center"
+                        href="#submenu20" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="submenu20">
+                        <span><img src="images/icons/Library icon.svg" alt="e-learning"> Library</span>
+                        <i class="fas fa-angle-down dropdown-icon"></i>
+                    </a>
+                    <ul class="collapse list-unstyled ps-3" id="submenu20">
+                        <li><a class="nav-link" href="#">Room</a></li>
+                        <li><a class="nav-link" href="#">Rack </a></li>
+                        <li><a class="nav-link" href="#">Book Type</a></li>
+                        <li><a class="nav-link" href="#">Book</a></li>
+                        <li><a class="nav-link" href="#">Manual Issue/Return</a></li>
+                        <li><a class="nav-link" href="#">Students/Staff</a></li>
+                        <li><a class="nav-link" href="#">Auto Issue/Return</a></li>
+                        <li><a class="nav-link" href="#">Reservation</a></li>
+                        <li><a class="nav-link" href="#">Bar Code</a></li>
+                        <li><a class="nav-link" href="#">Spine</a></li>
+                        <li><a class="nav-link" href="#">Import Book</a></li>
+                        <li><a class="nav-link" href="#">Update Book</a></li>
+                        <li><a class="nav-link" href="#">Download</a></li>
+                        <li><a class="nav-link" href="#">Setting</a></li>
+
+                        <li><a class="nav-link" href="#">Report</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center"
+                        href="#submenu21" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="submenu21">
+                        <span><img src="images/icons/Lunch icon.svg" alt="e-learning"> Lunch</span>
+                        <i class="fas fa-angle-down dropdown-icon"></i>
+                    </a>
+                    <ul class="collapse list-unstyled ps-3" id="submenu21">
+                        <li><a class="nav-link" href="#">Lunch Report</a></li>
+                        <li><a class="nav-link" href="#">Lunch Form </a></li>
+
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center"
+                        href="#submenu23" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="submenu23">
+                        <span><img src="images/icons/Gallery icon.svg" alt="e-learning"> Gallery</span>
+                        <i class="fas fa-angle-down dropdown-icon"></i>
+                    </a>
+                    <ul class="collapse list-unstyled ps-3" id="submenu23">
+                        <li><a class="nav-link" href="#">Albums</a></li>
+                        <li><a class="nav-link" href="#">Images</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="images/icons/Events icon.svg" alt="e-learning">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center"
+                        href="#submenu24" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="submenu24">
+                        <span><img src="images/icons/Bogs icon.svg" alt="e-learning">Blog/Article</span>
+                        <i class="fas fa-angle-down dropdown-icon"></i>
+                    </a>
+                    <ul class="collapse list-unstyled ps-3" id="submenu24">
+                        <li><a class="nav-link" href="#">Add Blog Category</a></li>
+                        <li><a class="nav-link" href="#">Add Blog/Article</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="images/icons/Videos icon.svg" alt="e-learning">Videos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center"
+                        href="#submenu25" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="submenu25">
+                        <span><img src="images/icons/Downloads icon.svg" alt="e-learning"> Downloads</span>
+                        <i class="fas fa-angle-down dropdown-icon"></i>
+                    </a>
+                    <ul class="collapse list-unstyled ps-3" id="submenu25">
+                        <li><a class="nav-link" href="#">Category</a></li>
+                        <li><a class="nav-link" href="#">File</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="images/icons/GPS tracker icon.svg" alt="e-learning">GPS
+                        tracker</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="images/icons/Change password icon.svg"
+                            alt="e-learning">Change Password</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center"
+                        href="#submenu26" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="submenu26">
+                        <span><img src="images/icons/CAS icon.svg" alt="e-learning"> Logs <span class="new-btn-nav">
+                                New</span></span>
+                        <i class="fas fa-angle-down dropdown-icon"></i>
+                    </a>
+                    <ul class="collapse list-unstyled ps-3" id="submenu26">
+                        <li><a class="nav-link" href="#">Activity Logs</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center"
+                        href="#submenu27" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="submenu27">
+                        <span><img src="images/icons/tool icon.svg" alt="e-learning"> Tools <span class="new-btn-nav">
+                                New</span></span>
+                        <i class="fas fa-angle-down dropdown-icon"></i>
+                    </a>
+                    <ul class="collapse list-unstyled ps-3" id="submenu27">
+                        <li><a class="nav-link" href="#">Widgets</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="images/icons/help icon.svg" alt="e-learning">Help</a>
+                </li>
+
+            </ul>
+        </nav>
+        <div id="main" class="flex-grow-1">
+
+            <header class="d-flex justify-content-between align-items-center  py-2 px-3 border-bottom bg-header">
+                <div class="d-flex w-50">
+                    <button id="toggleSidebar" class="btn btn-custom p-0 m-0 ">
+                        <i class="fas fa-bars text-white"></i>
+                    </button>
+                    <input type="search" class="form-control rounded-3 ms-3" placeholder="  How can I help you today?">
+                </div>
+
+                <div class="d-flex align-items-center">
+
+
+                    <a class="btn btn-light me-2" href="#">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.6012 12.9633C16.923 11.7969 16.5629 10.1227 16.5629 8.125C16.5629 6.38452 15.8715 4.71532 14.6408 3.48461C13.4101 2.2539 11.7409 1.5625 10.0004 1.5625C8.2599 1.5625 6.59071 2.2539 5.36 3.48461C4.12929 4.71532 3.43789 6.38452 3.43789 8.125C3.43789 10.1234 3.07929 11.7969 2.40117 12.9633C2.2628 13.2012 2.18945 13.4713 2.18849 13.7465C2.18753 14.0218 2.25899 14.2924 2.3957 14.5312C2.53155 14.7702 2.72872 14.9687 2.96686 15.106C3.20501 15.2433 3.47549 15.3146 3.75039 15.3125H6.57695C6.65447 16.1669 7.04868 16.9614 7.68213 17.54C8.31558 18.1186 9.14248 18.4394 10.0004 18.4394C10.8583 18.4394 11.6852 18.1186 12.3186 17.54C12.9521 16.9614 13.3463 16.1669 13.4238 15.3125H16.2504C16.5249 15.3142 16.7949 15.2427 17.0326 15.1054C17.2703 14.9681 17.4671 14.7699 17.6027 14.5312C17.74 14.2927 17.8122 14.0223 17.8119 13.7471C17.8116 13.4718 17.7389 13.2015 17.6012 12.9633ZM10.0004 16.5625C9.64018 16.5626 9.29102 16.4382 9.01198 16.2104C8.73294 15.9826 8.54118 15.6654 8.46914 15.3125H11.5316C11.4596 15.6654 11.2678 15.9826 10.9888 16.2104C10.7098 16.4382 10.3606 16.5626 10.0004 16.5625ZM4.2707 13.4375C4.96211 12.0312 5.31289 10.2453 5.31289 8.125C5.31289 6.8818 5.80675 5.68951 6.68582 4.81044C7.5649 3.93136 8.75719 3.4375 10.0004 3.4375C11.2436 3.4375 12.4359 3.93136 13.315 4.81044C14.194 5.68951 14.6879 6.8818 14.6879 8.125C14.6879 10.2445 15.0379 12.0312 15.7293 13.4375H4.2707Z"
+                                fill="black"></path>
+                        </svg>
+                    </a>
+                    <div class="dropdown">
+                        <button class="btn btn-light dropdown-toggle " type="button" id="profileDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <svg width="20" height="20" viewBox="0 0 20 20" style="margin-right: 4px;" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17.5 16.6665C17.5 15.2148 16.1083 13.9807 14.1667 13.5223M12.5 16.6665C12.5 14.8248 10.2617 13.3332 7.5 13.3332C4.73833 13.3332 2.5 14.8248 2.5 16.6665M12.5 10.8332C13.3841 10.8332 14.2319 10.482 14.857 9.85686C15.4821 9.23174 15.8333 8.38389 15.8333 7.49984C15.8333 6.61578 15.4821 5.76794 14.857 5.14281C14.2319 4.51769 13.3841 4.1665 12.5 4.1665M7.5 10.8332C6.61594 10.8332 5.7681 10.482 5.14298 9.85686C4.51786 9.23174 4.16667 8.38389 4.16667 7.49984C4.16667 6.61578 4.51786 5.76794 5.14298 5.14281C5.7681 4.51769 6.61594 4.1665 7.5 4.1665C8.38405 4.1665 9.2319 4.51769 9.85702 5.14281C10.4821 5.76794 10.8333 6.61578 10.8333 7.49984C10.8333 8.38389 10.4821 9.23174 9.85702 9.85686C9.2319 10.482 8.38405 10.8332 7.5 10.8332Z"
+                                    stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                            </svg>Arnav Shrestha
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </header>
+
+            <div class=" p-4">
+
+                <div class="box-page p-lg-4 p-3 box-height">
+                    <div class="box-page__content ">
+
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <ul class="nav nav-tabs nav-underline" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link px-4 active" id="add-1-tab" data-bs-toggle="tab"
+                                            data-bs-target="#add-1-tab-pane" type="button" role="tab"
+                                            aria-controls="add-1-tab-pane" aria-selected="true">
+                                            Add Exam
+
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link px-4" id="two-list" data-bs-toggle="tab"
+                                            data-bs-target="#two-list-pane" type="button" role="tab"
+                                            aria-controls="two-list-pane" aria-selected="false">
+                                            Exams List
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link px-4" id="three-list" data-bs-toggle="tab"
+                                            data-bs-target="#three-list-pane" type="button" role="tab"
+                                            aria-controls="three-list-pane" aria-selected="false">
+                                            Add Exam Detail
+
+                                        </button>
+                                    </li>
+
+
+                                </ul>
+                                <div class="tab-content mt-lg-4" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="add-1-tab-pane" role="tabpanel"
+                                        aria-labelledby="add-1-tab" tabindex="0">
+
+                                        <form action="">
+                                            <div class="row g-3 align-items-center mt-3">
+                                                <div class="col-md-12">
+                                                    <label for=""> Exam Name</label>
+                                                    <input type="text" class="form-control" class="form-control" name=""
+                                                        id="">
+                                                </div>
+                                                <div class="col-md-12">
+
+                                                    <label for="">Exam Type</label>
+                                                    <div class="d-flex gap-4">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                                Normal
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="flexRadioDefault" id="flexRadioDefault2">
+                                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                                Combined Exam
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="flexRadioDefault" id="flexRadioDefault2">
+                                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                                General Evaluation
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="flexRadioDefault" id="flexRadioDefault2">
+                                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                                Selective Exam
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <button type="submit" class="btn btn-primary mt-4">Submit</button>
+
+                                                </div>
+
+                                            </div>
+
+                                        </form>
+
+
+
+
+
+
+
+
+                                    </div>
+                                    <div class="tab-pane fade" id="two-list-pane" role="tabpanel"
+                                        aria-labelledby="two-list" tabindex="0">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <div class="my-3">
+                                                    <label for="">Exam Status</label>
+                                                    <select class="form-select">
+                                                        <option value="1" selected>ALl</option>
+                                                        <option value="2">Visible</option>
+                                                        <option value="3">Hidden</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="table-responsive mt-4">
+                                            <table class="table table-bordered align-middle">
+                                                <thead class="table-light">
+                                                    <tr>
+                                                        <th>Name</th>
+                                                        <th>Exam Type</th>
+                                                        <th>Action</th>
+
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Internal Marks </td>
+                                                        <td>General Evaluation</td>
+                                                        <td><button class="btn btn-success btn-sm">Visible</button>
+                                                            <button class="btn btn-primary btn-sm">edit</button> <button
+                                                                class="btn btn-danger btn-sm">delete</button></td>
+
+
+
+                                                    </tr>
+
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+
+
+
+                                    </div>
+                                    <div class="tab-pane fade" id="three-list-pane" role="tabpanel"
+                                        aria-labelledby="three-list" tabindex="0">
+
+                                        <div class="row g-3 align-items-center mt-3">
+                                            <div class="col-md-4">
+
+                                                <select class="form-select">
+                                                    <option selected>Exam</option>
+                                                    <option value="1">BBA-Sem-7</option>
+                                                    <option value="2">BBA-Sem-6</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <select class="form-select">
+                                                    <option selected>Class</option>
+                                                    <option value="1">BBA-Sem-7</option>
+                                                    <option value="2">BBA-Sem-6</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <select class="form-select">
+                                                    <option selected>Exam Year</option>
+                                                    <option value="1">2080</option>
+                                                    <option value="2">2081</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="details-about-exam mt-4">
+                                            <div class="bg-primary-subtle ">
+                                                <ul class="nav nav-pills d-flex mb-3" id="pills-tab" role="tablist">
+                                                    <li class="nav-item flex-fill" role="presentation"
+                                                        style="width: auto;">
+                                                        <button class="nav-link active  w-100" id="pills-home-tab"
+                                                            data-bs-toggle="pill" data-bs-target="#pills-home"
+                                                            type="button" role="tab" aria-controls="pills-home"
+                                                            aria-selected="true" style="border-radius: 0;">All
+                                                            Subjects</button>
+                                                    </li>
+                                                    <li class="nav-item flex-fill" role="presentation"
+                                                        style="width: auto;">
+                                                        <button class="nav-link  w-100" id="pills-profile-tab"
+                                                            data-bs-toggle="pill" data-bs-target="#pills-profile"
+                                                            type="button" role="tab" aria-controls="pills-profile"
+                                                            aria-selected="false" style="border-radius: 0;">Subject from
+                                                            Class Routine </button>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+
+
+                                            <div class="tab-content" id="pills-tabContent">
+                                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                                    aria-labelledby="pills-home-tab" tabindex="0">
+                                                 <form action="">
+
+                                                    <div class="row g-4">
+                                                        <div class="col-lg-6">
+
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Use Daily
+                                                                    Attendance</label>
+                                                                <div class="d-flex gap-4">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="attendance" id="useDaily" checked>
+                                                                        <label class="form-check-label"
+                                                                            for="useDaily">Use
+                                                                            Daily
+                                                                            Attendance</label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="attendance" id="useManual">
+                                                                        <label class="form-check-label"
+                                                                            for="useManual">Use
+                                                                            Manual Attendance</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Click to select start and
+                                                                    end
+                                                                    date</label>
+                                                                <input type="date" class="form-control">
+                                                            </div>
+
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Published</label>
+                                                                <div class="d-flex gap-4">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="published" id="publishedNo" checked>
+                                                                        <label class="form-check-label"
+                                                                            for="publishedNo">No</label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="published" id="publishedYes">
+                                                                        <label class="form-check-label"
+                                                                            for="publishedYes">Yes</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Optional Subject</label>
+                                                                <div class="d-flex gap-4 ">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="optionalSubject"
+                                                                            id="optionalSubjectNo" checked>
+                                                                        <label class="form-check-label"
+                                                                            for="optionalSubjectNo">No</label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="optionalSubject"
+                                                                            id="optionalSubjectYes">
+                                                                        <label class="form-check-label"
+                                                                            for="optionalSubjectYes">Yes</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Publish Format</label>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        id="useBuilderFormat">
+                                                                    <label class="form-check-label"
+                                                                        for="useBuilderFormat">Use Builder
+                                                                        Format</label>
+                                                                </div>
+                                                                <select class="form-select mt-2">
+                                                                    <option>Select Format</option>
+                                                                </select>
+                                                            </div>
+
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Can Edit Result</label>
+                                                                <div class="d-flex">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="canEditResult" id="canEditResultYes"
+                                                                            checked>
+                                                                        <label class="form-check-label"
+                                                                            for="canEditResultYes">Yes</label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="canEditResult" id="canEditResultNo">
+                                                                        <label class="form-check-label"
+                                                                            for="canEditResultNo">No</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Display Routine (Mobile
+                                                                    App)</label>
+                                                                <div class="d-flex gap-4">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="displayRoutine" id="displayRoutineYes"
+                                                                            checked>
+                                                                        <label class="form-check-label"
+                                                                            for="displayRoutineYes">Yes</label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="displayRoutine" id="displayRoutineNo">
+                                                                        <label class="form-check-label"
+                                                                            for="displayRoutineNo">No</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Report Card Issue Date (in
+                                                                    Report
+                                                                    Card)</label>
+                                                                <input type="date" class="form-control">
+                                                            </div>
+
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Remarks</label>
+                                                                <select class="form-select">
+                                                                    <option>Please select</option>
+                                                                </select>
+                                                                <div class="form-check mt-2">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        id="includeRemarks">
+                                                                    <label class="form-check-label"
+                                                                        for="includeRemarks">Include subject
+                                                                        specific
+                                                                        Remarks (Additional)</label>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Result Type</label>
+                                                                <select class="form-select">
+                                                                    <option>Default</option>
+                                                                </select>
+                                                            </div>
+
+                                                            <div class="bg-primary-subtle px-3 py-3">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        value="" id="flexCheckDefault">
+                                                                    <label class="form-check-label"
+                                                                        for="flexCheckDefault">
+                                                                        Follow NEB new grading system
+                                                                    </label>
+                                                                </div>
+                                                                <details>
+                                                                    <summary>Learn More</summary>
+                                                                    <p>
+                                                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtnvAOajH9gS4C30cRF7rD_voaTAKly2Ntaw&s"
+                                                                            alt="img">
+                                                                    </p>
+                                                                </details>
+
+
+                                                            </div>
+
+                                                            <div class="bg-primary-subtle px-3 py-3">
+
+                                                                <details>
+                                                                    <summary> CustomizationLearn More</summary>
+                                                                    <p>
+                                                                        <table class="table ">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>Exam Display Name </td>
+                                                                                    <td><input type="text"
+                                                                                            class="form-control"
+                                                                                            placeholder=""
+                                                                                            name="custom_attribute[display_exam]"
+                                                                                            value=""></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Display Class </td>
+                                                                                    <td><input type="text"
+                                                                                            class="form-control"
+                                                                                            placeholder=""
+                                                                                            name="custom_attribute[display_class]"
+                                                                                            value=""></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Display Year (B.S) </td>
+                                                                                    <td><input type="text"
+                                                                                            class="form-control"
+                                                                                            placeholder=""
+                                                                                            name="custom_attribute[display_year_bs]"
+                                                                                            value=""></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Display Year (A.D.) </td>
+                                                                                    <td><input type="text"
+                                                                                            class="form-control"
+                                                                                            placeholder=""
+                                                                                            name="custom_attribute[display_year_ad]"
+                                                                                            value=""></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td> Exam Start Date </td>
+                                                                                    <td><input type="text"
+                                                                                            class="form-control"
+                                                                                            placeholder=""
+                                                                                            name="custom_attribute[start_date]"
+                                                                                            value=""></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td> Exam End Date </td>
+                                                                                    <td><input type="text"
+                                                                                            class="form-control"
+                                                                                            placeholder=""
+                                                                                            name="custom_attribute[end_date]"
+                                                                                            value=""></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td> Exam Start Time </td>
+                                                                                    <td><input type="text"
+                                                                                            class="form-control"
+                                                                                            placeholder=""
+                                                                                            name="custom_attribute[start_time]"
+                                                                                            value=""></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td> Exam End Time </td>
+                                                                                    <td><input type="text"
+                                                                                            class="form-control"
+                                                                                            placeholder=""
+                                                                                            name="custom_attribute[end_time]"
+                                                                                            value=""></td>
+                                                                                </tr>
+
+                                                                                <tr>
+                                                                                    <td>Show Symbol no Of </td>
+                                                                                    <td>
+                                                                                        <select class="form-select">
+                                                                                            <option value="1">Please
+                                                                                                select</option>
+                                                                                            <option value="2">
+                                                                                                Result symbol number
+                                                                                            </option>
+                                                                                            <option value="3">
+                                                                                                SEE symbol number
+                                                                                            </option>
+                                                                                            <option value="4">
+                                                                                                HSEB symbol number
+                                                                                            </option>
+                                                                                            <option value="5">
+                                                                                                SEE registration number
+                                                                                            </option>
+                                                                                            <option value="6">
+                                                                                                Class Roll Number
+                                                                                            </option>
+                                                                                            <option value="7">
+                                                                                                Student Exam Detail
+                                                                                            </option>
+                                                                                        </select>
+                                                                                    </td>
+                                                                                </tr>
+
+                                                                                <tr>
+                                                                                    <td> Rank Display </td>
+                                                                                    <td>
+                                                                                        <span>
+                                                                                            <select class="form-select">
+                                                                                                <option value="1">
+                                                                                                    Show Class Rank
+                                                                                                </option>
+                                                                                                <option value="2">
+                                                                                                    Show Section Rank
+                                                                                                </option>
+                                                                                                <option value="3">
+                                                                                                    Show Class and
+                                                                                                    Section Rank
+                                                                                                </option>
+
+                                                                                                <option value="4">
+                                                                                                    Show rank label
+                                                                                                    &amp; hide value
+                                                                                                </option>
+                                                                                            </select>
+                                                                                        </span>
+                                                                                    </td>
+                                                                                </tr>
+
+
+                                                                                <tr>
+                                                                                    <td> Signed By </td>
+                                                                                    <td><input type="text"
+                                                                                            class="form-control"
+                                                                                            placeholder="HEAD TEACHER/CAMPUS CHIEF"
+                                                                                            name="" value="1"></td>
+                                                                                </tr>
+                                                                                <tr class="">
+                                                                                    <td> Show Principal Sign Image </td>
+                                                                                    <td>
+                                                                                        <select class="form-select">
+
+                                                                                            <option value="0">Don't Show
+                                                                                            </option>
+
+                                                                                            <option
+                                                                                                value="principal_name">
+                                                                                                Show Principal Name
+                                                                                            </option>
+
+                                                                                            <option
+                                                                                                value="principal_signature">
+                                                                                                Show Principal Signature
+                                                                                            </option>
+
+                                                                                            <option
+                                                                                                value="principal_name_signature">
+                                                                                                Show Principal Name and
+                                                                                                Signature</option>
+                                                                                        </select>
+                                                                                    </td>
+                                                                                </tr>
+
+                                                                                <tr class="">
+                                                                                    <td> Include ECA in Result Table
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <select class="form-select">
+                                                                                            <option value="1"
+                                                                                                selected="">Yes</option>
+                                                                                            <option value="0">No
+                                                                                            </option>
+                                                                                        </select>
+                                                                                    </td>
+                                                                                </tr>
+
+
+
+
+
+                                                                                <tr class="">
+                                                                                    <td> Teacher Name </td>
+                                                                                    <td>
+                                                                                        <select class="form-select">
+                                                                                            <option value="hide"
+                                                                                                selected="">Hide
+                                                                                            </option>
+                                                                                            <option value="">Show
+                                                                                            </option>
+                                                                                        </select>
+                                                                                        <input type="text"
+                                                                                            class="form-control"
+                                                                                            placeholder=""
+                                                                                            name="custom_attribute[teacher_name]"
+                                                                                            value="">
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="">
+                                                                                    <td> Teacher Signature </td>
+                                                                                    <td>
+                                                                                        <select class="form-select">
+                                                                                            <option value="hide"
+                                                                                                selected="">Hide
+                                                                                            </option>
+                                                                                            <option value="">Show
+                                                                                            </option>
+                                                                                        </select>
+                                                                                        <input type="file"
+                                                                                            class="form-control"
+                                                                                            accept="image/png, image/jpeg, image/jpg">
+                                                                                    </td>
+                                                                                </tr>
+
+
+
+
+
+                                                                                <tr>
+                                                                                    <th colspan="2">Result Table Header
+                                                                                        Options</th>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Theory Heading </td>
+                                                                                    <td><input type="text"
+                                                                                            class="form-control"
+                                                                                            placeholder="Eg: Theory or Th"
+                                                                                            name="custom_attribute[theory_heading]"
+                                                                                            value=""></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Practical Heading </td>
+                                                                                    <td><input type="text"
+                                                                                            class="form-control"
+                                                                                            placeholder="Eg: Practical or Pr"
+                                                                                            name="custom_attribute[practical_heading]"
+                                                                                            value=""></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Non Academic Heading </td>
+                                                                                    <td><input type="text"
+                                                                                            class="form-control"
+                                                                                            placeholder="Eg: Extra Activities"
+                                                                                            name="custom_attribute[eca_heading]"
+                                                                                            value=""></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th colspan="2"> Admit Card</th>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td> Card Border </td>
+                                                                                    <td>
+                                                                                        <select class="form-select">
+                                                                                            <option value="">Please
+                                                                                                select</option>
+                                                                                            <option value="show">Show
+                                                                                            </option>
+                                                                                            <option value="hide">Hide
+                                                                                            </option>
+                                                                                        </select>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td> School Name </td>
+                                                                                    <td>
+                                                                                        <select class="form-select">
+                                                                                            <option value=""></option>
+                                                                                            <option value="show">Show
+                                                                                            </option>
+                                                                                            <option value="hide">Hide
+                                                                                            </option>
+                                                                                        </select>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Symbol no </td>
+                                                                                    <td>
+                                                                                        <select class="form-select">
+                                                                                            <option value="">Please
+                                                                                                select</option>
+                                                                                            <option value="show">Show
+                                                                                            </option>
+                                                                                            <option value="hide">Hide
+                                                                                            </option>
+                                                                                        </select>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Show Symbol no Of </td>
+                                                                                    <td>
+                                                                                        <select class="form-select">
+                                                                                            <option value="">Please
+                                                                                                select</option>
+                                                                                            <option value="1">
+                                                                                                Result symbol number
+                                                                                            </option>
+                                                                                            <option value="2">
+                                                                                                School Id </option>
+                                                                                            <option value="3">
+                                                                                                SEE symbol number
+                                                                                            </option>
+                                                                                            <option value="4">
+                                                                                                HSEB symbol number
+                                                                                            </option>
+                                                                                            <option value="5">
+                                                                                                SEE Registration No.
+                                                                                            </option>
+                                                                                            <option value="6">
+                                                                                                School Registration No.
+                                                                                            </option>
+                                                                                            <option value="7">
+                                                                                                HSEB Registration number
+                                                                                            </option>
+                                                                                            <option value="8">
+                                                                                                Label only </option>
+                                                                                            <option value="9">
+                                                                                                Student Exam Detail
+                                                                                            </option>
+                                                                                        </select>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Show Registration no Of </td>
+                                                                                    <td>
+                                                                                        <select class="form-select">
+                                                                                            <option value="1">Please
+                                                                                                select</option>
+                                                                                            <option value="2">
+                                                                                                School Id </option>
+                                                                                            <option value="3">
+                                                                                                School Registration No
+                                                                                            </option>
+                                                                                            <option value="4">
+                                                                                                SEE Registration No
+                                                                                            </option>
+                                                                                            <option value="5">
+                                                                                                HSEB Registration No
+                                                                                            </option>
+                                                                                            <option value="6">
+                                                                                                Label only </option>
+                                                                                        </select>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+
+                                                                                    <td>Roll no </td>
+                                                                                    <td>
+                                                                                        <select class="form-select">
+                                                                                            <option value="">Please
+                                                                                                select</option>
+                                                                                            <option value="1">Show
+                                                                                            </option>
+                                                                                            <option value="2">Hide
+                                                                                            </option>
+                                                                                        </select>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td> Signed By </td>
+                                                                                    <td><input type="text"
+                                                                                            class="form-control"
+                                                                                            placeholder="Administration"
+                                                                                            name="custom_attribute[admit_card][signed_by]"
+                                                                                            value=""></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td> Signature Image </td>
+                                                                                    <td>
+                                                                                        <select class="form-select">
+                                                                                            <option value="hide"
+                                                                                                selected="">Hide
+                                                                                            </option>
+                                                                                            <option value="show">Show
+                                                                                            </option>
+                                                                                        </select>
+                                                                                        <p class="text-muted">Image Size
+                                                                                        </p>
+                                                                                        <input type="text"
+                                                                                            class="form-control"
+                                                                                            placeholder="in px"
+                                                                                            name="custom_attribute"
+                                                                                            value="">
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Non Academic Subjects</td>
+                                                                                    <td>
+                                                                                        <select class="form-select">
+                                                                                            <option value="hide"
+                                                                                                selected="">Hide
+                                                                                            </option>
+                                                                                            <option value="show">Show
+                                                                                            </option>
+                                                                                        </select>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </p>
+                                                                </details>
+
+
+
+
+
+
+                                                            </div>
+
+
+
+
+
+
+
+
+
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <h6>
+                                                                Other Settings of 'Mid-Term Examination'</h6>
+
+                                                            <a class="d-block text-secondary py-3 text-decoration-none fw-bold fs-5"
+                                                                href="#">
+                                                                <i class="fa fa-folder"></i> Attendance Setting - Copy
+                                                                to
+                                                                all class</a>
+                                                            <a class="d-block text-secondary py-3 text-decoration-none fw-bold fs-5"
+                                                                href="#">
+                                                                <i class="fa fa-folder"></i> Attendance Setting - Copy
+                                                                to
+                                                                all class</a>
+                                                            <a class="d-block text-secondary py-3 text-decoration-none fw-bold fs-5"
+                                                                href="#">
+                                                                <i class="fa fa-folder"></i> Attendance Setting - Copy
+                                                                to
+                                                                all class</a>
+                                                            <a class="d-block text-secondary py-3 text-decoration-none fw-bold fs-5"
+                                                                href="#">
+                                                                <i class="fa fa-folder"></i> Attendance Setting - Copy
+                                                                to
+                                                                all class</a>
+                                                            <a class="d-block text-secondary py-3 text-decoration-none fw-bold fs-5"
+                                                                href="#">
+                                                                <i class="fa fa-folder"></i> Attendance Setting - Copy
+                                                                to
+                                                                all class</a>
+                                                        </div>
+                                                        <div class="col-lg-12">
+                                                            <table class="table">
+                                                                <thead class="table-primary">
+                                                                    <tr>
+                                                                        <td>Subjects</td>
+                                                                        <td>Exam Start and End Date-Time</td>
+
+                                                                        <td>Full Marks</td>
+                                                                        <td>Pass Marks</td>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+
+
+
+                                                                    <tr>
+                                                                        <td>
+                                                                            Elective I Health System and Policy<input
+                                                                                type="hidden" 
+                                                                                value="Elective I Health System and Policy">
+                                                                        </td>
+                                                                        <td class="d-flex align-items-center gap-3 ">
+                                                                            <i class="fa fa-clock"></i>
+                                                                            <input type="text" class="form-control"
+                                                                               
+                                                                                value="">
+                                                                        </td>
+
+                                                                        <td>
+                                                                            <input type="text" min="1"
+                                                                                class="form-control" 
+                                                                                value=""
+                                                                                placeholder="Theory Full Marks">
+                                                                            <br>
+                                                                            <input type="text" min="1"
+                                                                                class="form-control"
+                                                                                value=""
+                                                                                placeholder="Practical Full Marks">
+                                                                            <br>
+                                                                            <input type="text" min="1"
+                                                                                class="form-control" 
+                                                                                value="" placeholder="CAS Full Marks">
+                                                                        </td>
+                                                                        <td>
+                                                                            <input type="text" min="1"
+                                                                                class="form-control"
+                                                                                value=""
+                                                                                placeholder="Theory Pass Marks">
+                                                                            <br>
+                                                                            <input type="text" min="1"
+                                                                                class="form-control"
+                                                                                 value=""
+                                                                                placeholder="Practical Pass Marks">
+                                                                            <br>
+                                                                            <input type="text" min="1"
+                                                                                class="form-control"
+                                                                                value="" placeholder="CAS Pass Marks">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            Hospitality Statistics<input type="hidden"
+                                                                               
+                                                                                value="Hospitality Statistics">
+                                                                        </td>
+                                                                        <td class="d-flex align-items-center gap-3 ">
+                                                                            <i class="fa fa-clock"></i>
+                                                                            <input type="text" class="form-control"
+                                                                                name="date_time[]"
+                                                                                value="">
+                                                                        </td>
+
+                                                                        <td>
+                                                                            <input type="text" min="1"
+                                                                                class="form-control" name="full[]"
+                                                                                value=""
+                                                                                placeholder="Theory Full Marks">
+                                                                            <br>
+                                                                            <input type="text" min="1"
+                                                                                class="form-control"
+                                                                                name="fullPractical[]" value=""
+                                                                                placeholder="Practical Full Marks">
+                                                                            <br>
+                                                                            <input type="text" min="1"
+                                                                                class="form-control" name="fullCAS[]"
+                                                                                value="" placeholder="CAS Full Marks">
+                                                                        </td>
+                                                                        <td>
+                                                                            <input type="text" min="1"
+                                                                                class="form-control" name="pass[]"
+                                                                                value=""
+                                                                                placeholder="Theory Pass Marks">
+                                                                            <br>
+                                                                            <input type="text" min="1"
+                                                                                class="form-control"
+                                                                                name="passPractical[]" value=""
+                                                                                placeholder="Practical Pass Marks">
+                                                                            <br>
+                                                                            <input type="text" min="1"
+                                                                                class="form-control" name="passCAS[]"
+                                                                                value="" placeholder="CAS Pass Marks">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            Investment Finance<input type="hidden"
+                                                                                name="subjects[]"
+                                                                                value="Investment Finance">
+                                                                        </td>
+                                                                        <td class="d-flex align-items-center gap-3 ">
+                                                                            <i class="fa fa-clock"></i>
+                                                                            <input type="text" class="form-control"
+                                                                                name="date_time[]"
+                                                                                value="">
+                                                                        </td>
+
+                                                                        <td>
+                                                                            <input type="text" min="1"
+                                                                                class="form-control" name="full[]"
+                                                                                value=""
+                                                                                placeholder="Theory Full Marks">
+                                                                            <br>
+                                                                            <input type="text" min="1"
+                                                                                class="form-control"
+                                                                                name="fullPractical[]" value=""
+                                                                                placeholder="Practical Full Marks">
+                                                                            <br>
+                                                                            <input type="text" min="1"
+                                                                                class="form-control" name="fullCAS[]"
+                                                                                value="" placeholder="CAS Full Marks">
+                                                                        </td>
+                                                                        <td>
+                                                                            <input type="text" min="1"
+                                                                                class="form-control" name="pass[]"
+                                                                                value=""
+                                                                                placeholder="Theory Pass Marks">
+                                                                            <br>
+                                                                            <input type="text" min="1"
+                                                                                class="form-control"
+                                                                                name="passPractical[]" value=""
+                                                                                placeholder="Practical Pass Marks">
+                                                                            <br>
+                                                                            <input type="text" min="1"
+                                                                                class="form-control" name="passCAS[]"
+                                                                                value="" placeholder="CAS Pass Marks">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            Internship<input type="hidden"
+                                                                                name="subjects[]" value="Internship">
+                                                                        </td>
+                                                                        <td class="d-flex align-items-center gap-3 ">
+                                                                            <i class="fa fa-clock"></i>
+                                                                            <input type="text" class="form-control"
+                                                                                
+                                                                                value="">
+                                                                        </td>
+
+                                                                        <td>
+                                                                            <input type="text" min="1"
+                                                                                class="form-control" 
+                                                                                value=""
+                                                                                placeholder="Theory Full Marks">
+                                                                            <br>
+                                                                            <input type="text" min="1"
+                                                                                class="form-control"
+                                                                               value=""
+                                                                                placeholder="Practical Full Marks">
+                                                                            <br>
+                                                                            <input type="text" min="1"
+                                                                                class="form-control"
+                                                                                value="" placeholder="CAS Full Marks">
+                                                                        </td>
+                                                                        <td>
+                                                                            <input type="text" min="1"
+                                                                                class="form-control" name="pass[]"
+                                                                                value=""
+                                                                                placeholder="Theory Pass Marks">
+                                                                            <br>
+                                                                            <input type="text" min="1"
+                                                                                class="form-control"
+                                                                                value=""
+                                                                                placeholder="Practical Pass Marks">
+                                                                            <br>
+                                                                            <input type="text" min="1"
+                                                                                class="form-control" 
+                                                                                value="" placeholder="CAS Pass Marks">
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="form-group">
+                                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                                        </div>
+                                                    </div>
+
+
+
+
+                                                 </form>
+
+
+
+
+
+
+
+
+
+
+
+
+                                                </div>
+                                                <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                                    aria-labelledby="pills-profile-tab" tabindex="0">...</div>
+
+                                            </div>
+
+
+
+                                        </div>
+
+
+
+
+                                    </div>
+
+
+                                </div>
+
+
+
+
+
+                            </div>
+
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Include ApexCharts -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!-- Include Flatpickr CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    <!-- Include Flatpickr JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        let timeout;
+        document.addEventListener("scroll", () => {
+            document.body.classList.add("scrolling");
+
+            clearTimeout(timeout);
+            timeout = setTimeout(() => {
+                document.body.classList.remove("scrolling");
+            }, 1000); // Hides scrollbar after 1 second of no scrolling
+        });
+    </script>
+    <script>
+        // Initialize Flatpickr for the calendar
+        document.addEventListener("DOMContentLoaded", function () {
+            flatpickr("#calendar", {
+                inline: true, // Inline calendar
+                dateFormat: "Y-m-d", // Format for the calendar
+                defaultDate: new Date(), // Set today's date by default
+            });
+        });
+    </script>
+    <script>
+        const toggleSidebar = document.getElementById('toggleSidebar');
+        const sidebar = document.getElementById('sidebar');
+        const main = document.getElementById('main');
+
+        toggleSidebar.addEventListener('click', () => {
+            sidebar.classList.toggle('collapsed');
+            main.classList.toggle('full-width');
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Select all dropdown toggles
+            const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+
+            dropdownToggles.forEach(toggle => {
+                toggle.addEventListener('click', function () {
+                    // Get the associated dropdown icon
+                    const icon = this.querySelector('.dropdown-icon');
+
+                    // Toggle angle-down and angle-down classes
+                    if (icon.classList.contains('fa-angle-down')) {
+                        icon.classList.remove('fa-angle-down');
+                        icon.classList.add('fa-angle-left');
+                    } else {
+                        icon.classList.remove('fa-angle-left');
+                        icon.classList.add('fa-angle-down');
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script>
+        var options = {
+            series: [47.1, 30.2, 22.7], // Percentages of Female, Male, Others
+            chart: {
+                type: 'donut',
+                height: 200,
+            },
+            labels: ['Female', 'Male', 'Others'],
+            colors: ['#1977b8', '#dc3545', '#ffc107'],
+            legend: {
+                show: false,
+            },
+            plotOptions: {
+                pie: {
+                    donut: {
+                        size: '70%',
+                        labels: {
+                            show: true,
+                            name: {
+                                show: true,
+                            },
+                            value: {
+                                show: true,
+                                formatter: function (val) {
+                                    return parseFloat(val.toFixed(1)); // Ensure clean floating-point values
+                                },
+                            },
+                            total: {
+                                show: true,
+                                label: 'Students',
+                                formatter: function () {
+                                    return '469'; // Always display "469" in the center
+                                },
+                                color: '#333',
+                                fontSize: '16px',
+                                fontWeight: 600,
+                            },
+                        }
+                    }
+                }
+            },
+            dataLabels: {
+                enabled: false, // Disable percentage or extra labels
+            }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+    </script>
+
+
+    <script>
+        // Initialize Flatpickr for the calendar
+        document.addEventListener("DOMContentLoaded", function () {
+            flatpickr("#calendar", {
+                inline: true, // Inline calendar
+                dateFormat: "Y-m-d", // Format for the calendar
+            });
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>
