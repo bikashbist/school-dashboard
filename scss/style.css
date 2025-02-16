@@ -122,8 +122,6 @@ input.form-control.search-lg {
   overflow-y: scroll;
   transition: all 0.3s ease-in-out;
   scroll-behavior: smooth;
-  padding-left: 8px;
-  padding-right: 8px;
 }
 
 .new-btn-nav {
@@ -198,7 +196,7 @@ input.form-control.search-lg {
   border-radius: 0px;
 }
 #sidebar::-webkit-scrollbar-thumb {
-  background: #000080;
+  background: #aaaaaa;
   border-radius: 10px;
 }
 #sidebar::-webkit-scrollbar-thumb:hover {
@@ -223,6 +221,8 @@ input.form-control.search-lg {
 
 ul.nav {
   width: 100%;
+  background: #000080;
+  padding: 10px 10px;
 }
 
 li.nav-item {
@@ -236,7 +236,7 @@ li.nav-item {
 }
 
 #sidebar .nav-link {
-  color: #555555;
+  color: #dcdcdc;
   font-size: 15px !important;
   position: relative;
   padding: 10px 10px;
@@ -244,6 +244,7 @@ li.nav-item {
 
 #sidebar .nav-link img {
   width: 20px;
+  filter: brightness(0) invert(1); /* Converts the image to white */
 }
 
 #sidebar .nav-link.active {
@@ -251,10 +252,17 @@ li.nav-item {
   background: #edf2fa;
   border-radius: 5px;
 }
+#sidebar .nav-link.active img {
+  filter: brightness(1) invert(0);
+}
 
 #sidebar .nav-link:hover {
   color: #222;
   background: #f9f9f9;
+  border-radius: 5px;
+}
+#sidebar .nav-link:hover img {
+  filter: brightness(1) invert(0);
 }
 
 #main {
