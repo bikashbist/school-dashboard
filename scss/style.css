@@ -40,7 +40,7 @@ body {
 }
 
 .bg-header {
-  background-color: #1977b8;
+  background-color: #000080;
 }
 
 p {
@@ -198,7 +198,7 @@ input.form-control.search-lg {
   border-radius: 0px;
 }
 #sidebar::-webkit-scrollbar-thumb {
-  background: #5c9dcb;
+  background: #000080;
   border-radius: 10px;
 }
 #sidebar::-webkit-scrollbar-thumb:hover {
@@ -437,11 +437,11 @@ li.nav-item {
   cursor: pointer;
 }
 .quick-link__content .icon i {
-  color: #1977b8;
+  color: #000080;
 }
 
 .weather {
-  background-color: #1977b8;
+  background-color: #000080;
   padding: 20px 20px;
   border-radius: 5px;
 }

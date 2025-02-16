@@ -8,7 +8,7 @@ $info-color: #28d5ff;
 $gray-dark-5-color: #555555;
 $border-color: #d3e3fd;
 $body-color: #edf2fa;
-$bg-header: #1977b8;
+$bg-header: #000080;
 
 
 @use 'login';
@@ -188,7 +188,7 @@ input.form-control.search-lg {
 
     /* Handle */
     &::-webkit-scrollbar-thumb {
-        background: #5c9dcb;
+        background: #000080;
         border-radius: 10px;
     }
 
