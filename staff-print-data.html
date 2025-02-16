@@ -730,6 +730,28 @@
     <!-- Include Flatpickr JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get the current URL
+            var currentUrl = window.location.pathname.split("/").pop();
+
+            // Loop through all nav links
+            document.querySelectorAll(".nav-link").forEach(function (navLink) {
+                if (navLink.getAttribute("href") === currentUrl) {
+                    // Add active class to current link
+                    navLink.classList.add("active");
+
+                    // Open the parent submenu if it exists
+                    let parentSubmenu = navLink.closest("ul.collapse");
+                    if (parentSubmenu) {
+                        parentSubmenu.classList.add("show"); // Keep submenu open
+                        parentSubmenu.previousElementSibling.setAttribute("aria-expanded",
+                        "true"); // Set aria-expanded to true
+                    }
+                }
+            });
+        });
+    </script>
+    <script>
         let timeout;
         document.addEventListener("scroll", () => {
             document.body.classList.add("scrolling");
