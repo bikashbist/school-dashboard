@@ -28,7 +28,13 @@
             <ul class="nav ">
 
                 <li class="nav-item">
-                    <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center active"
+                    <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center "
+                    href="#dashboard" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                    aria-controls="dashboard">
+                    <span><img src="images/icon-latest/student.png" alt="e-learning"> Dashboard</span>
+                    <i class="fas fa-angle-down dropdown-icon"></i>
+                </a>
+                    <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center "
                         href="#submenu7" data-bs-toggle="collapse" role="button" aria-expanded="false"
                         aria-controls="submenu7">
                         <span><img src="images/icon-latest/student.png" alt="e-learning"> Students</span>
@@ -84,10 +90,10 @@
                         <li><a class="nav-link" href="import-staff.html">
                                 Import Staffs
                             </a></li>
-                            <li><a class="nav-link" href="update-staff.html">
+                        <li><a class="nav-link" href="update-staff.html">
                                 Update Staffs
                             </a></li>
-                   
+
 
                     </ul>
                 </li>
@@ -249,7 +255,8 @@
 
 
                 <li class="nav-item">
-                    <a class="nav-link" href="student-evaluation.html"><img src="images/icon-latest/risk-evaluation.png" alt="e-learning">
+                    <a class="nav-link" href="student-evaluation.html"><img src="images/icon-latest/risk-evaluation.png"
+                            alt="e-learning">
                         Students'
                         Evaluation</a>
                 </li>
@@ -288,7 +295,8 @@
                     </ul>
                 </li> -->
                 <li class="nav-item">
-                    <a class="nav-link" href="merit.html"><img src="images/icons/Merit icon.svg" alt="e-learning">Merit</a>
+                    <a class="nav-link" href="merit.html"><img src="images/icons/Merit icon.svg"
+                            alt="e-learning">Merit</a>
                 </li>
                 <!-- <li class="nav-item">
                     <a class="nav-link" href="#"><img src="images/icons/Attendance icon.svg"
@@ -303,14 +311,17 @@
                         Attendance</a>
                 </li> -->
                 <li class="nav-item">
-                    <a class="nav-link" href="leave-note.html"><img src="images/icons/Leave notes icon.svg" alt="e-learning">Leave
+                    <a class="nav-link" href="leave-note.html"><img src="images/icons/Leave notes icon.svg"
+                            alt="e-learning">Leave
                         Notes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="homework-part.html"><img src="images/icons/Homework icon.svg" alt="e-learning">Homework</a>
+                    <a class="nav-link" href="homework-part.html"><img src="images/icons/Homework icon.svg"
+                            alt="e-learning">Homework</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="check-homework.html"><img src="images/icons/Check homework icon.svg" alt="e-learning">Check
+                    <a class="nav-link" href="check-homework.html"><img src="images/icons/Check homework icon.svg"
+                            alt="e-learning">Check
                         Homework</a>
                 </li>
                 <li class="nav-item">
@@ -352,7 +363,8 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="daily-report.html"><img src="images/icons/Daily report icon.svg" alt="e-learning">Daily
+                    <a class="nav-link" href="daily-report.html"><img src="images/icons/Daily report icon.svg"
+                            alt="e-learning">Daily
                         Report</a>
                 </li>
                 <li class="nav-item">
@@ -370,7 +382,7 @@
                         <li><a class="nav-link" href="selective-remarks-list.html">Selective Remarks List</a></li>
                         <li><a class="nav-link" href="student-specific-remarks.html">Student Specific Remarks</a></li>
                         <li><a class="nav-link" href="student-specific-remarks.html">Subject Specific Remarks</a></li>
-                        
+
                         <li><a class="nav-link" href="#">Manual Attendance</a></li>
                         <li><a class="nav-link" href="#">Subject Attendance</a></li>
                         <li><a class="nav-link" href="student-exam-details.html">Studet Exam Details</a></li>
@@ -496,7 +508,7 @@
 
                     </ul>
                 </li>
-              
+
                 <li class="nav-item">
                     <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center"
                         href="#submenu21" data-bs-toggle="collapse" role="button" aria-expanded="false"
@@ -646,116 +658,234 @@
                     <div class="box-page__header">
                         <div class="row">
                             <div class="col-lg-12">
-                                <div class="box-page__header--details d-flex justify-content-between mb-2">
+                                <div class="box-page__header--details d-flex justify-content-between align-items-center mb-2">
                                     <h1>Student Search</h1>
-                                    <div class="students-list-buttons" style="text-align:right;margin-bottom:10px">
-                                        <button class="btn-sm btn btn-primary" id="studentsDocumentsUpload">Upload
-                                            Files</button>
-                                        <button class="btn-sm btn btn-primary"
-                                            id="generateCertificate">Certificate</button>
-                                        <button class="btn-sm btn btn-primary" id="addStudentsGroup">Add in
-                                            Group</button>
-                                        <button class="btn-sm btn btn-success" id="addStudentsRemarks">Add
-                                            Remarks</button>
-                                        <button class="btn-sm btn btn-success" id="sendPushNotification">Send
-                                            Notification</button>
-
-                                        <button class="btn-sm btn btn-info" id="addLeaveNote">Add Leave Note</button>
-
-
-                                        <button class="btn-sm btn btn-info" id="addVisitorsRecord">Visitor's
-                                            Record</button>
-
-                                        <button class="btn-sm btn btn-success" id="addStudentsRecord">Records</button>
-
+                                    <div id="custom-search-input " style="width: 600px;">
+                                        <div class="input-group ">
+                                            <input type="text" class="form-control search-lg bg-light " id="search-input"
+                                                >
+                                            <span
+                                                class="input-group-text text-white btn btn-primary d-flex align-items-center justify-content-center "
+                                                id="search-btn">
+                                                <i class="fa fa-search text-white"></i>
+                                            </span>
+                                        </div>
                                     </div>
+                                  
 
 
                                 </div>
                             </div>
-                            <div class="col-lg-12">
-                                <div id="custom-search-input">
-                                    <div class="input-group my-4">
-                                        <input type="text" class="form-control search-lg" id="search-input"
-                                            >
-                                        <span
-                                            class="input-group-text text-white btn btn-info d-flex align-items-center justify-content-center"
-                                            id="search-btn">
-                                            <i class="fa fa-search"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                               
-                            </div>
+                           
+                         
 
                         </div>
                     </div>
                     <div class="box-page__content">
-                        <div class="table-responsive">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="table-responsive">
 
-                            <table class="table mt-lg-4">
-                                <thead>
-                                    <tr>
-                                        <th>
-                                            <input id="select_all" value="1" type="checkbox">
-                                            <br>
-                                            <span>All</span>
-                                        </th>
-                                        <th>Image</th>
-                                        <th>Name</th>
-                                        <th>Username</th>
-                                        <th>Father Phone</th>
-                                        <th>Mother Phone</th>
+                                    <table class="table table-bordered  border-primary-subtle mt-lg-4">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    <input id="select_all" value="1" type="checkbox">
+                                                    <br>
+                                                    <span>All</span>
+                                                </th>
+                                                <th>Image</th>
+                                                <th>Name</th>
+                                                <th>Username</th>
+                                             
+                                                <th>Action</th>
+        
+                                            </tr>
+                                        </thead>
+        
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <input class="usercheck"  type="checkbox">
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <img class="rounded-3 "
+                                                            src="https://images.unsplash.com/photo-1622861431942-b45f2b5b6564?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                                            width="60" height="60" alt="TK">
+                                                    </div>
+        
+                                                </td>
+                                                <td>
+                                                    Kalpana Koirala | BHM-Sem-5,A
+        
+                                                    <br>
+                                                </td>
+                                                <td>Central-BHM-2079-011</td>
+                                 
+                                             
+        
+                                          
+                                             
+                                                <td>
+        
+                                                    <a class="btn btn-primary btn-sm mb-1 ">View More</a>
+                                                    <a class="btn btn-success btn-sm mb-1 ">Edit</a>
+                                                    <a class="btn btn-primary btn-sm mb-1 ">Detail</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input class="usercheck"  type="checkbox">
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <img class="rounded-3 "
+                                                            src="https://images.unsplash.com/photo-1622861431942-b45f2b5b6564?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                                            width="60" height="60" alt="TK">
+                                                    </div>
+        
+                                                </td>
+                                                <td>
+                                                    Kalpana Koirala | BHM-Sem-5,A
+        
+                                                    <br>
+                                                </td>
+                                                <td>Central-BHM-2079-011</td>
+                                 
+                                             
+        
+                                          
+                                             
+                                                <td>
+        
+                                                    <a class="btn btn-primary btn-sm mb-1 ">View More</a>
+                                                    <a class="btn btn-success btn-sm mb-1 ">Edit</a>
+                                                    <a class="btn btn-primary btn-sm mb-1 ">Detail</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input class="usercheck"  type="checkbox">
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <img class="rounded-3 "
+                                                            src="https://images.unsplash.com/photo-1622861431942-b45f2b5b6564?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                                            width="60" height="60" alt="TK">
+                                                    </div>
+        
+                                                </td>
+                                                <td>
+                                                    Kalpana Koirala | BHM-Sem-5,A
+        
+                                                    <br>
+                                                </td>
+                                                <td>Central-BHM-2079-011</td>
+                                 
+                                             
+        
+                                          
+                                             
+                                                <td>
+        
+                                                    <a class="btn btn-primary btn-sm mb-1 ">View More</a>
+                                                    <a class="btn btn-success btn-sm mb-1 ">Edit</a>
+                                                    <a class="btn btn-primary btn-sm mb-1 ">Detail</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input class="usercheck"  type="checkbox">
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <img class="rounded-3 "
+                                                            src="https://images.unsplash.com/photo-1622861431942-b45f2b5b6564?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                                            width="60" height="60" alt="TK">
+                                                    </div>
+        
+                                                </td>
+                                                <td>
+                                                    Kalpana Koirala | BHM-Sem-5,A
+        
+                                                    <br>
+                                                </td>
+                                                <td>Central-BHM-2079-011</td>
+                                 
+                                             
+        
+                                          
+                                             
+                                                <td>
+        
+                                                    <a class="btn btn-primary btn-sm mb-1 ">View More</a>
+                                                    <a class="btn btn-success btn-sm mb-1 ">Edit</a>
+                                                    <a class="btn btn-primary btn-sm mb-1 ">Detail</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input class="usercheck"  type="checkbox">
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <img class="rounded-3 "
+                                                            src="https://images.unsplash.com/photo-1622861431942-b45f2b5b6564?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                                            width="60" height="60" alt="TK">
+                                                    </div>
+        
+                                                </td>
+                                                <td>
+                                                    Kalpana Koirala | BHM-Sem-5,A
+        
+                                                    <br>
+                                                </td>
+                                                <td>Central-BHM-2079-011</td>
+                                 
+                                             
+        
+                                          
+                                             
+                                                <td>
+        
+                                                    <a class="btn btn-primary btn-sm mb-1 ">View More</a>
+                                                    <a class="btn btn-success btn-sm mb-1 ">Edit</a>
+                                                    <a class="btn btn-primary btn-sm mb-1 ">Detail</a>
+                                                </td>
+                                            </tr>
+        
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="students-list-buttons bg-primary-subtle border border-primary-subtle rounded-3 d-flex flex-wrap gap-2 p-3 mt-lg-4" >
+                                    <button class="btn-sm btn btn-primary" id="studentsDocumentsUpload">Upload
+                                        Files</button>
+                                    <button class="btn-sm btn btn-primary"
+                                        id="generateCertificate">Certificate</button>
+                                    <button class="btn-sm btn btn-primary" id="addStudentsGroup">Add in
+                                        Group</button>
+                                    <button class="btn-sm btn btn-success" id="addStudentsRemarks">Add
+                                        Remarks</button>
+                                    <button class="btn-sm btn btn-success" id="sendPushNotification">Send
+                                        Notification</button>
 
-                                        <th>Student Previous Code</th>
-                                        <th>Password</th>
-                                        <th>Action</th>
+                                    <button class="btn-sm btn btn-info" id="addLeaveNote">Add Leave Note</button>
 
-                                    </tr>
-                                </thead>
 
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <input class="usercheck" name="usercheck[]" type="checkbox">
-                                        </td>
-                                        <td>
-                                            <div>
-                                                <img class="rounded-circle "
-                                                    src="https://images.unsplash.com/photo-1622861431942-b45f2b5b6564?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                                    width="60" height="60" alt="TK">
-                                            </div>
+                                    <button class="btn-sm btn btn-info" id="addVisitorsRecord">Visitor's
+                                        Record</button>
 
-                                        </td>
-                                        <td>
-                                            Kalpana Koirala | BHM-Sem-5,A
+                                    <button class="btn-sm btn btn-success" id="addStudentsRecord">Records</button>
 
-                                            <br>
-                                        </td>
-                                        <td>Central-BHM-2079-011</td>
-                                        <td>9840888948</td>
-                                        <td>9841678857</td>
+                                </div>
+                            </div>
+                         
 
-                                        <td></td>
-                                        <td>
-                                            <div>
-                                                tfstx </div>
-                                            <a href="#" class="text-primary">Reset</a>
-                                        </td>
-                                        <td>
-
-                                            <a class="btn btn-primary btn-sm mb-1 ">Enabled</a>
-
-                                            <a class="btn btn-info btn-sm mb-1 ">Result
-                                                Enabled</a>
-                                            <a class="btn btn-success btn-sm mb-1 ">Edit</a>
-                                            <a class="btn btn-primary btn-sm mb-1 ">Detail</a>
-                                        </td>
-                                    </tr>
-
-                                </tbody>
-                            </table>
                         </div>
+                       
 
                     </div>
 

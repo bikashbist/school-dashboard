@@ -85,9 +85,7 @@ hr {
 
 input.form-control.search-lg {
   font-size: 18px;
-  padding: 10px 30px;
-  border: 1px solid #d3e3fd;
-  border-radius: 0px;
+  padding: 5px 30px;
 }
 
 #search-input::-moz-placeholder {
@@ -111,6 +109,10 @@ input.form-control.search-lg {
 
 .table a {
   text-decoration: none;
+}
+
+.table-bordered {
+  border: 1px solid #d3e3fd !important;
 }
 
 #sidebar {
@@ -623,7 +625,7 @@ li.nav-item {
   margin: 0;
 }
 .nav-tabs .nav-link {
-  color: #858c94;
+  color: #edf2fa;
 }
 
 .form-select {
