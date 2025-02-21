@@ -1,0 +1,40 @@
+
+.table-container {
+    background: #fff;
+    table {
+        border-collapse: separate;
+        border-spacing: 0 0px;
+    }
+    thead {
+        background: #ebe7fa;
+    }
+    th {
+        text-align: left;
+        padding: 15px;
+    }
+    tbody tr {
+        background: #fff;
+        border-radius: 10px;
+    }
+    tbody tr td {
+        vertical-align: middle;
+        padding: 15px;
+    }
+    .avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .class-badge {
+        background: #ff7043;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 50px;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 12px;
+    }
+  
+}

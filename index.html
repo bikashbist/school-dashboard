@@ -14,6 +14,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="scss/style.css">
+    <style>
+        .flatpickr-day.today {
+            background: #5c3dff !important;
+            /* Your custom color */
+            color: white !important;
+            border-radius: 50%;
+        }
+    </style>
 </head>
 
 <body>
@@ -28,13 +36,13 @@
             </div>
             <ul class="nav ">
                 <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center w-100 "
-                href="#dashboard" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                aria-controls="dashboard">
-                <span><img src="images/icon-latest/student.png" alt="e-learning"> Dashboard</span>
-          
-            </a>
+                    href="#dashboard" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                    aria-controls="dashboard">
+                    <span><img src="images/icon-latest/student.png" alt="e-learning"> Dashboard</span>
+
+                </a>
                 <li class="nav-item">
-                   
+
                     <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center "
                         href="#submenu7" data-bs-toggle="collapse" role="button" aria-expanded="false"
                         aria-controls="submenu7">
@@ -650,12 +658,118 @@
             </header>
 
             <div class="p-4">
+                <div class="row ">
+                    <div class="col-md-12 mb-4">
+                        <div class="alert-message">
+                            <div class="alert alert-success rounded-pill d-flex align-items-center justify-content-between border-success mb-4"
+                                role="alert">
+                                <div class="d-flex align-items-center">
+                                    <span class="me-1 avatar avatar-sm flex-shrink-0"><img
+                                            src="https://preskool.dreamstechnologies.com/html/template/assets/img/profiles/avatar-27.jpg" height="40" width="40" alt="Img"
+                                            class="img-fluid rounded-circle"></span>
+                                    <p class="mb-0">Ram Thapa From <strong>BBA </strong> , <strong>C</strong> has paid Fees for the <strong class="mx-1">Semister</strong></p>
+                                </div>
+                                <button type="button" class="btn-close p-0" data-bs-dismiss="alert"
+                                    aria-label="Close"><span><i class="ti ti-x"></i></span></button>
+                            </div>
+                        </div>
+
+                        <!-- Dashboard Content -->
+                        <div class="card bg-header dashboard-profile">
+                            <div class="overlay-img">
+                                <img src="https://preskool.dreamstechnologies.com/html/template/assets/img/bg/shape-04.png" alt="img" class="img-fluid shape-01">
+                                <img src="https://preskool.dreamstechnologies.com/html/template/assets/img/bg/shape-01.png" alt="img" class="img-fluid shape-02">
+                                <img src="https://preskool.dreamstechnologies.com/html/template/assets/img/bg/shape-02.png" alt="img" class="img-fluid shape-03">
+                                <img src="https://preskool.dreamstechnologies.com/html/template/assets/img/bg/shape-03.png" alt="img" class="img-fluid shape-04">
+                            </div>
+                            <div class="card-body">
+                                <div
+                                    class="d-flex align-items-xl-center justify-content-xl-between flex-xl-row flex-column">
+                                    <div class="mb-3 mb-xl-0">
+                                        <div class="d-flex align-items-center flex-wrap mb-2">
+                                            <h1 class="text-white me-2">Welcome Back, Mr. Herald</h1>
+                                            <a href="profile.html"
+                                                class="avatar avatar-sm img-rounded bg-gray-800 dark-hover"><i
+                                                    class="ti ti-edit text-white"></i></a>
+                                        </div>
+                                        <p class="text-white">Have a Good day at work</p>
+                                    </div>
+                                    <p class="text-white"><i class="ti ti-refresh me-1"></i>Updated Recently on 15 Jun
+                                        2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Dashboard Content -->
+
+                    </div>
+                </div>
                 <div class="row g-4">
-                    <div class="col-lg-12">
+                    <!-- <div class="col-lg-12">
                         <div class="quick-link">
-                            <h1 class="">Quick Links</h1>
-                            <div class="quick-link__details">
-                                <div class="d-flex gap-4 flex-wrap flex-fill">
+
+                            <div class="quick-link__details bg-white dash-card p-4">
+                                <div class="row g-4">
+                                    <div class="col-lg-12">
+                                        <h1 class="">Quick Links</h1>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="dashboard-box calendar-box">
+                                            <div class="icon-circle calendar-bg">
+                                                <i class="fas fa-calendar-alt"></i>
+                                            </div>
+                                            <h5>Calendar</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        <div class="dashboard-box exam-box">
+                                            <div class="icon-circle exam-bg">
+                                                <i class="fas fa-box"></i>
+                                            </div>
+                                            <h5>Exam Result</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        <div class="dashboard-box attendance-box">
+                                            <div class="icon-circle attendance-bg">
+                                                <i class="fas fa-clipboard-check"></i>
+                                            </div>
+                                            <h5>Attendance</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        <div class="dashboard-box fees-box">
+                                            <div class="icon-circle fees-bg">
+                                                <i class="fas fa-file-invoice-dollar"></i>
+                                            </div>
+                                            <h5>Fees</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        <div class="dashboard-box homework-box">
+                                            <div class="icon-circle homework-bg">
+                                                <i class="fas fa-book"></i>
+                                            </div>
+                                            <h5>Home Works</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        <div class="dashboard-box reports-box">
+                                            <div class="icon-circle reports-bg">
+                                                <i class="fas fa-file-alt"></i>
+                                            </div>
+                                            <h5>Reports</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                 <div class="d-flex gap-4 flex-wrap flex-fill">
 
                                     <a
                                         class="quick-link__content d-block bg-white text-center py-2 flex-fill px-3 text-decoration-none ">
@@ -666,6 +780,7 @@
                                             Attendance
                                         </p>
                                     </a>
+                                  
 
 
                                     <a
@@ -734,19 +849,19 @@
                                     </a>
 
 
-                                </div>
+                                </div> 
                             </div>
 
 
                         </div>
-                    </div>
+                    </div> -->
                     <div class="col-lg-8">
                         <div class="row g-4">
                             <div class="col-12">
                                 <div class="row g-4">
 
                                     <div class="col-5">
-                                        <div class="weather h-100 ">
+                                        <!-- <div class="weather h-100 ">
                                             <div class="title d-flex justify-content-between ">
                                                 <h1 class="text-white">Weather</h1>
 
@@ -773,10 +888,75 @@
                                                 <p class="text-white"><i class="fa fa-calendar-days "></i> 24 July, 2025
                                                     5:01 AM</p>
                                             </div>
+                                        </div> -->
+
+
+                                        <div class="quick-link">
+
+                                            <div class="quick-link__details bg-white dash-card p-4">
+                                                <div class="row g-4">
+                                                    <div class="col-lg-12">
+                                                        <h1 class="">Quick Links</h1>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="dashboard-box calendar-box">
+                                                            <div class="icon-circle calendar-bg">
+                                                                <i class="fas fa-calendar-alt"></i>
+                                                            </div>
+                                                            <h5>Calendar</h5>
+                                                        </div>
+                                                    </div>
+                
+                                                    <div class="col-md-6">
+                                                        <div class="dashboard-box exam-box">
+                                                            <div class="icon-circle exam-bg">
+                                                                <i class="fas fa-box"></i>
+                                                            </div>
+                                                            <h5>Exam Result</h5>
+                                                        </div>
+                                                    </div>
+                
+                                                    <div class="col-md-6">
+                                                        <div class="dashboard-box attendance-box">
+                                                            <div class="icon-circle attendance-bg">
+                                                                <i class="fas fa-clipboard-check"></i>
+                                                            </div>
+                                                            <h5>Attendance</h5>
+                                                        </div>
+                                                    </div>
+                
+                                                    <div class="col-md-6">
+                                                        <div class="dashboard-box fees-box">
+                                                            <div class="icon-circle fees-bg">
+                                                                <i class="fas fa-file-invoice-dollar"></i>
+                                                            </div>
+                                                            <h5>Fees</h5>
+                                                        </div>
+                                                    </div>
+                
+                                                    <div class="col-md-6">
+                                                        <div class="dashboard-box homework-box">
+                                                            <div class="icon-circle homework-bg">
+                                                                <i class="fas fa-book"></i>
+                                                            </div>
+                                                            <h5>Home Works</h5>
+                                                        </div>
+                                                    </div>
+                
+                                                    <div class="col-md-6">
+                                                        <div class="dashboard-box reports-box">
+                                                            <div class="icon-circle reports-bg">
+                                                                <i class="fas fa-file-alt"></i>
+                                                            </div>
+                                                            <h5>Reports</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+            
+                                            </div>
+                
+                
                                         </div>
-
-
-
 
 
                                     </div>
@@ -844,39 +1024,118 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="col-lg-12">
-                                        <div class="birthday-wrapper">
-                                            <div class="title d-flex justify-content-between align-items-center">
-                                                <h1 class="">Birthdays</h1>
-                                                <a class="btn btn-default text-decoration-none" href="#">View All</a>
-                                            </div>
-
-                                            <div class="wrapper">
-                                                <h2>Student</h2>
-                                                <div class="card-wrapper ">
 
 
-                                                    <div class="no-birthday">
-                                                        <p>No Birthdays Today</p>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                            <div class="wrapper">
-                                                <h2>Staff</h2>
-                                                <div class="card-wrapper ">
-
-
-                                                    <div class="no-birthday">
-                                                        <p>No Birthdays Today</p>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
 
                                 </div>
+                            </div>
+                            <div class="col-lg-12 ">
+                                <div class="table-container dash-card h-100">
+                                    <h1 class="p-3">Unpaid Student Intuition</h1>
+                                    <table class="table">
+                                        <thead class="table-primary">
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>ID</th>
+                                                <th>Class</th>
+                                                <th>Fees</th>
+                                                <th>Rank</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><img src="https://i.pravatar.cc/40?img=1" class="avatar"> Jordan
+                                                    Nico</td>
+                                                <td>ID 1234567811</td>
+                                                <td><span class="class-badge "><i class="fas fa-user"></i> Class VII
+                                                        B</span></td>
+                                                <td>$52,036</td>
+                                                <td>First</td>
+                                                <td><i class="fas fa-print"></i> <i class="fas fa-ellipsis-h ms-2"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="https://i.pravatar.cc/40?img=2" class="avatar"> Jordan
+                                                    Nico</td>
+                                                <td>ID 1234567811</td>
+                                                <td><span class="class-badge "><i class="fas fa-user"></i> Class VII
+                                                        B</span></td>
+                                                <td>$52,036</td>
+                                                <td>First</td>
+                                                <td><i class="fas fa-print"></i> <i class="fas fa-ellipsis-h ms-2"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="https://i.pravatar.cc/40?img=3" class="avatar"> Karen Hope
+                                                </td>
+                                                <td>ID 1234567812</td>
+                                                <td><span class="class-badge "><i class="fas fa-user"></i> Class VII
+                                                        A</span></td>
+                                                <td>$53,036</td>
+                                                <td>First</td>
+                                                <td><i class="fas fa-print"></i> <i class="fas fa-ellipsis-h ms-2"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="https://i.pravatar.cc/40?img=4" class="avatar"> Karen Hope
+                                                </td>
+                                                <td>ID 1234567812</td>
+                                                <td><span class="class-badge "><i class="fas fa-user"></i> Class VII
+                                                        A</span></td>
+                                                <td>$53,036</td>
+                                                <td>First</td>
+                                                <td><i class="fas fa-print"></i> <i class="fas fa-ellipsis-h ms-2"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="https://i.pravatar.cc/40?img=5" class="avatar"> Nadila
+                                                    Adja</td>
+                                                <td>ID 1234567813</td>
+                                                <td><span class="class-badge "><i class="fas fa-user"></i> Class VII
+                                                        B</span></td>
+                                                <td>$54,036</td>
+                                                <td>First</td>
+                                                <td><i class="fas fa-print"></i> <i class="fas fa-ellipsis-h ms-2"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="https://i.pravatar.cc/40?img=5" class="avatar"> Nadila
+                                                    Adja</td>
+                                                <td>ID 1234567813</td>
+                                                <td><span class="class-badge "><i class="fas fa-user"></i> Class VII
+                                                        B</span></td>
+                                                <td>$54,036</td>
+                                                <td>First</td>
+                                                <td><i class="fas fa-print"></i> <i class="fas fa-ellipsis-h ms-2"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="https://i.pravatar.cc/40?img=5" class="avatar"> Nadila
+                                                    Adja</td>
+                                                <td>ID 1234567813</td>
+                                                <td><span class="class-badge "><i class="fas fa-user"></i> Class VII
+                                                        B</span></td>
+                                                <td>$54,036</td>
+                                                <td>First</td>
+                                                <td><i class="fas fa-print"></i> <i class="fas fa-ellipsis-h ms-2"></i>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="d-flex justify-content-between align-items-center p-3 pt-0">
+                                        <span>Showing 1 to 5 of 10 entries</span>
+                                        <nav>
+                                            <ul class="pagination mb-0">
+                                                <li class="page-item"><a class="page-link" href="#">‹</a></li>
+                                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">›</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+
                             </div>
 
                         </div>
@@ -884,8 +1143,8 @@
                     <div class="col-lg-4 aside-part">
                         <div class="card date-picker h-100">
                             <div class=" d-flex justify-content-between align-items-center">
-                                <h1 class="mb-0">Events</h1>
-                                <button class=" btn btn-event ">Create Event</button>
+                                <h1 class="mb-0">School Calendar</h1>
+                                <!-- <button class=" btn btn-event ">Create Event</button> -->
                             </div>
                             <div class="date-picker-body">
                                 <!-- Calendar Section -->
@@ -894,14 +1153,102 @@
                             <div class="date-picker-footer mt-lg-5">
                                 <!-- Events Section -->
                                 <h6 class="fw-bold">Today's Events</h6>
-                                <ul class="list-group mb-3">
+                                <div class="event-calender border-start border-info border-3 shadow-sm p-3 mb-3">
+                                    <div class="d-flex align-items-center mb-3 pb-3 border-bottom">
+                                        <span class="avatar p-1 me-2 bg-teal-transparent">
+                                            <i class="fa fa-user text-info fs-20"></i>
+                                        </span>
+                                        <div class="flex-fill">
+                                            <h6 class="mb-1">Parents, Teacher Meet</h6>
+                                            <p class="d-flex align-items-center"><i class="fa fa-calendar-days"></i>15
+                                                July 2024</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <p class="mb-0"><i class="ti ti-clock me-1"></i>09:10AM - 10:50PM</p>
+                                        <div class="avatar-list-stacked avatar-group-sm">
+                                            <span class="avatar border-0">
+                                                <img src="https://preskool.dreamstechnologies.com/html/template/assets/img/parents/parent-01.jpg"
+                                                    class="rounded-circle" alt="img">
+                                            </span>
+                                            <span class="avatar border-0">
+                                                <img src="https://preskool.dreamstechnologies.com/html/template/assets/img/parents/parent-07.jpg"
+                                                    class="rounded-circle" alt="img">
+                                            </span>
+                                            <span class="avatar border-0">
+                                                <img src="https://preskool.dreamstechnologies.com/html/template/assets/img/parents/parent-02.jpg"
+                                                    class="rounded-circle" alt="img">
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <ul class="list-group mb-3">
                                     <li class="list-group-item alert alert-danger text-muted">No events for today</li>
-                                </ul>
+                                </ul> -->
                                 <h6 class="fw-bold">Upcoming Events</h6>
                                 <div class=" alert  text-muted" role="alert"
                                     style="color: #333333 !important;background: #edf2fa;">
                                     No Upcoming Events
                                 </div>
+                            </div>
+                            <div class="recent-students mt-4">
+                                <div
+                                    class="d-flex justify-content-between align-items-center mb-3 bg-primary-subtle border border-primary-subtle p-3">
+                                    <div>
+                                        <h5>Recent Students</h5>
+                                        <p>You have <strong>456</strong> Students</p>
+                                    </div>
+                                    <div class="add-button">
+                                        <i class="fas fa-plus"></i>
+                                    </div>
+                                </div>
+
+                                <div class="student-item">
+                                    <img src="https://i.pravatar.cc/50?img=1" class="avatar">
+                                    <div class="student-info">
+                                        <div class="name">Samantha William</div>
+                                        <div class="class">Class VII A</div>
+                                    </div>
+                                    <div class="icon-button">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                </div>
+
+                                <div class="student-item">
+                                    <img src="https://i.pravatar.cc/50?img=2" class="avatar">
+                                    <div class="student-info">
+                                        <div class="name">Tony Soap</div>
+                                        <div class="class">Class VII B</div>
+                                    </div>
+                                    <div class="icon-button">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                </div>
+                                <div class="student-item">
+                                    <img src="https://i.pravatar.cc/50?img=1" class="avatar">
+                                    <div class="student-info">
+                                        <div class="name">Samantha William</div>
+                                        <div class="class">Class VII A</div>
+                                    </div>
+                                    <div class="icon-button">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                </div>
+
+                                <div class="student-item">
+                                    <img src="https://i.pravatar.cc/50?img=2" class="avatar">
+                                    <div class="student-info">
+                                        <div class="name">Tony Soap</div>
+                                        <div class="class">Class VII B</div>
+                                    </div>
+                                    <div class="icon-button">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                </div>
+
+
+
+
                             </div>
                         </div>
                     </div>
@@ -920,7 +1267,7 @@
                                         <div class="card-wrapper ">
 
 
-                                            <div class="no-birthday-card">
+                                            <div class="no-birthday">
                                                 <p>No Birthdays Today</p>
                                             </div>
                                         </div>
@@ -931,7 +1278,7 @@
                                         <div class="card-wrapper ">
 
 
-                                            <div class="no-birthday-card">
+                                            <div class="no-birthday">
                                                 <p>No Birthdays Today</p>
                                             </div>
                                         </div>
@@ -975,7 +1322,7 @@
                     if (parentSubmenu) {
                         parentSubmenu.classList.add("show"); // Keep submenu open
                         parentSubmenu.previousElementSibling.setAttribute("aria-expanded",
-                        "true"); // Set aria-expanded to true
+                            "true"); // Set aria-expanded to true
                     }
                 }
             });

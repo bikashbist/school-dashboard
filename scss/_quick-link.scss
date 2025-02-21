@@ -1,0 +1,46 @@
+.quick-link{
+    
+    .dashboard-box {
+        text-align: center;
+        padding: 20px;
+  
+        transition: transform 0.3s ease;
+        background-color: #f8f9fa;
+    }
+    
+    .dashboard-box:hover {
+        transform: translateY(-5px);
+    }
+    
+    .icon-circle {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin: 0 auto 10px;
+        font-size: 18px;
+        color: #fff;
+    }
+    h5{
+        font-size: 14px;
+    }
+       /* Background colors for different icons */
+       .calendar-bg { background-color: #28a745; } /* Green */
+       .exam-bg { background-color: #007bff; } /* Blue */
+       .attendance-bg { background-color: #ffc107; } /* Yellow */
+       .fees-bg { background-color: #17a2b8; } /* Cyan */
+       .homework-bg { background-color: #dc3545; } /* Red */
+       .reports-bg { background-color: #00a2ff; } /* Light Blue */
+       
+       /* Card backgrounds */
+       .calendar-box { background: #e8f5e9; } /* Light Green */
+       .exam-box { background: #e3f2fd; } /* Light Blue */
+       .attendance-box { background: #fff8e1; } /* Light Yellow */
+       .fees-box { background: #e0f7fa; } /* Light Cyan */
+       .homework-box { background: #ffebee; } /* Light Red */
+       .reports-box { background: #e1f5fe; } /* Light Blue */
+ 
+}
+
