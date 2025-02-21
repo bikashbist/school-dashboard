@@ -80,7 +80,11 @@ p {
 .form-select {
     border: 1px solid $border-color !important;
 }
-
+.flatpickr-day.today {
+    background: #5c3dff !important;
+    color: white !important;
+    border-radius: 50%;
+}
 hr {
 
     border-top: 1px solid $border-color !important;

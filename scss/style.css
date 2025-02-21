@@ -207,6 +207,12 @@ p {
   border: 1px solid #d3e3fd !important;
 }
 
+.flatpickr-day.today {
+  background: #5c3dff !important;
+  color: white !important;
+  border-radius: 50%;
+}
+
 hr {
   border-top: 1px solid #d3e3fd !important;
   opacity: 1 !important;
